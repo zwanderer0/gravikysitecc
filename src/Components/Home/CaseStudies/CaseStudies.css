@@ -52,11 +52,22 @@
   color: #095ce5;
   font-family: "JosefinBold";
   font-size: 1.1rem;
-  padding: 1rem 2rem;
-  border-radius: 30px;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
   cursor: pointer;
   transition: all 300ms ease;
-  min-width: 180px;
+  min-width: 280px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tab-subtitle {
+  font-family: "WorkSinLight";
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  opacity: 0.8;
 }
 
 .tab-button:hover {
