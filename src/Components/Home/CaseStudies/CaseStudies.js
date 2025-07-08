@@ -79,19 +79,12 @@ export default class CaseStudies extends Component {
                     <div className="printed-materials">
                       <h4>What We Printed:</h4>
                       <div className="materials-gallery">
-                        <div className="material-item">
+                        <div className="material-item featured">
                           <img
                             src={packageImg}
-                            alt="Sustainable packaging printed with AIR-INK"
+                            alt="Dell laptop packaging printed with AIR-INK"
                           />
-                          <p>Sustainable Packaging</p>
-                        </div>
-                        <div className="material-item">
-                          <img
-                            src={markerImg}
-                            alt="Writing instruments with AIR-INK"
-                          />
-                          <p>Writing Instruments</p>
+                          <p>Dell Laptop Packaging</p>
                         </div>
                       </div>
                     </div>
