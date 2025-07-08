@@ -43,13 +43,13 @@ export default class CaseStudies extends Component {
                 className={`tab-button ${activeTab === "mastercard" ? "active" : ""}`}
                 onClick={() => this.setActiveTab("mastercard")}
               >
-                Mastercard Partnership
+                Mastercard Credit Cards
               </button>
               <button
-                className={`tab-button ${activeTab === "doconomy" ? "active" : ""}`}
-                onClick={() => this.setActiveTab("doconomy")}
+                className={`tab-button ${activeTab === "pangaia" ? "active" : ""}`}
+                onClick={() => this.setActiveTab("pangaia")}
               >
-                Doconomy Innovation
+                Pangaia T-Shirts
               </button>
             </div>
 
