@@ -69,12 +69,12 @@ export default class CaseStudies extends Component {
                     </div>
                     <h3>Dell Technologies Partnership</h3>
                     <p>
-                      Graviky Labs collaborated with Dell Technologies to
-                      implement sustainable printing solutions using AIR-INK
-                      technology. This partnership demonstrates how
+                      Graviky Labs collaborated with Dell Technologies and
+                      University of Michigan Tauber Institute to implement
+                      sustainable printing solutions using AIR-INK technology
+                      for laptop packaging. This partnership demonstrates how
                       enterprise-level companies can integrate environmental
-                      responsibility into their core operations through
-                      innovative ink solutions.
+                      responsibility into their core operations.
                     </p>
                     <div className="printed-materials">
                       <h4>What We Printed:</h4>
