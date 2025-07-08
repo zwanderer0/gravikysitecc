@@ -179,7 +179,7 @@ export default class CaseStudies extends Component {
                   <div className="case-study-content">
                     <div className="case-study-visual">
                       <ReactPlayer
-                        url="https://youtu.be/rqlQd-vfOTk?si=HFEfNL2p0Ki2535B&t=18"
+                        url="https://www.youtube.com/watch?v=LRZedVsNulk"
                         width="100%"
                         height="300px"
                         controls={true}
