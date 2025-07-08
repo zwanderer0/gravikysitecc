@@ -30,12 +30,20 @@
   margin-right: auto;
 }
 
+.case-studies-layout {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .case-studies-tabs {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 3rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 300px;
+  flex: 0 0 300px;
 }
 
 .tab-button {
