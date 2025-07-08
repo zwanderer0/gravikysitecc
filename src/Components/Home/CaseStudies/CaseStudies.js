@@ -32,28 +32,32 @@ export default class CaseStudies extends Component {
               sustainable solutions
             </p>
 
-            <div className="case-studies-tabs">
-              <button
-                className={`tab-button ${activeTab === "dell" ? "active" : ""}`}
-                onClick={() => this.setActiveTab("dell")}
-              >
-                Dell Technologies
-              </button>
-              <button
-                className={`tab-button ${activeTab === "mastercard" ? "active" : ""}`}
-                onClick={() => this.setActiveTab("mastercard")}
-              >
-                Mastercard Credit Cards
-              </button>
-              <button
-                className={`tab-button ${activeTab === "pangaia" ? "active" : ""}`}
-                onClick={() => this.setActiveTab("pangaia")}
-              >
-                Pangaia T-Shirts
-              </button>
-            </div>
+                        <div className="case-studies-layout">
+              <div className="case-studies-tabs">
+                <button
+                  className={`tab-button ${activeTab === "dell" ? "active" : ""}`}
+                  onClick={() => this.setActiveTab("dell")}
+                >
+                  Dell Technologies
+                  <span className="tab-subtitle">Packaging Solutions</span>
+                </button>
+                <button
+                  className={`tab-button ${activeTab === "mastercard" ? "active" : ""}`}
+                  onClick={() => this.setActiveTab("mastercard")}
+                >
+                  Mastercard
+                  <span className="tab-subtitle">Credit Cards</span>
+                </button>
+                <button
+                  className={`tab-button ${activeTab === "pangaia" ? "active" : ""}`}
+                  onClick={() => this.setActiveTab("pangaia")}
+                >
+                  Pangaia
+                  <span className="tab-subtitle">T-Shirt Collection</span>
+                </button>
+              </div>
 
-            <div className="tab-content">
+              <div className="tab-content">
               {activeTab === "dell" && (
                 <div className="case-study-content">
                   <div className="case-study-visual">
