@@ -1,0 +1,239 @@
+.case-studies-container {
+  width: 100%;
+  background: #ffffff;
+  padding: 8% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.case-studies-content {
+  width: 86%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.case-studies-title {
+  font-family: "JosefinBold";
+  font-size: 3.5rem;
+  color: #202020;
+  margin: 0 0 1rem 0;
+}
+
+.case-studies-subtitle {
+  font-family: "WorkSinLight";
+  font-size: 1.4rem;
+  color: #666;
+  margin: 0 0 3rem 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-studies-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  background: transparent;
+  border: 2px solid #095ce5;
+  color: #095ce5;
+  font-family: "JosefinBold";
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  min-width: 180px;
+}
+
+.tab-button:hover {
+  background: #095ce5;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(9, 92, 229, 0.3);
+}
+
+.tab-button.active {
+  background: #095ce5;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(9, 92, 229, 0.3);
+}
+
+.tab-content {
+  background: #f8f9fa;
+  border-radius: 20px;
+  padding: 3rem;
+  margin: 0 auto;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.case-study-content h3 {
+  font-family: "JosefinBold";
+  font-size: 2.2rem;
+  color: #202020;
+  margin: 0 0 1.5rem 0;
+}
+
+.case-study-content p {
+  font-family: "WorkSinRegular";
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.case-study-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+  flex: 1;
+  min-width: 150px;
+}
+
+.stat h4 {
+  font-family: "JosefinBold";
+  font-size: 2.5rem;
+  color: #095ce5;
+  margin: 0 0 0.5rem 0;
+}
+
+.stat p {
+  font-family: "WorkSinLight";
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+.case-study-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #095ce5;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "JosefinBold";
+  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  transition: all 300ms ease;
+  margin-top: 1rem;
+}
+
+.case-study-link:hover {
+  background: #0847b8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(9, 92, 229, 0.4);
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .case-studies-title {
+    font-size: 3rem;
+  }
+
+  .case-studies-tabs {
+    gap: 1rem;
+  }
+
+  .tab-button {
+    min-width: 160px;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .tab-content {
+    padding: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .case-studies-container {
+    padding: 6% 0;
+  }
+
+  .case-studies-content {
+    width: 90%;
+  }
+
+  .case-studies-title {
+    font-size: 2.5rem;
+  }
+
+  .case-studies-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .case-studies-tabs {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .tab-button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .tab-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .case-study-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .case-study-content p {
+    font-size: 1.1rem;
+  }
+
+  .case-study-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .stat h4 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .case-studies-title {
+    font-size: 2rem;
+  }
+
+  .case-studies-subtitle {
+    font-size: 1rem;
+  }
+
+  .tab-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .case-study-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .case-study-content p {
+    font-size: 1rem;
+  }
+
+  .case-study-link {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+}
