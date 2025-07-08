@@ -25,7 +25,7 @@ export default class CaseStudies extends Component {
         <ScrollAnimation animateIn="fadeIn">
           <div className="case-studies-content">
             <h2 className="case-studies-title">
-              Our B2B collaborations so far
+              How AIR-INK blends into scaled printing
             </h2>
             <p className="case-studies-subtitle">
               See how leading global brands partner with us to create
