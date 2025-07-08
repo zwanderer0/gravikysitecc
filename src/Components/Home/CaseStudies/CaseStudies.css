@@ -138,6 +138,109 @@
   color: #ffffff;
 }
 
+/* Visual Assets Styling */
+.case-study-visual {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.case-study-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.case-study-video {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Printed Materials Gallery */
+.printed-materials {
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+.printed-materials h4 {
+  font-family: "JosefinBold";
+  font-size: 1.8rem;
+  color: #095ce5;
+  margin-bottom: 1.5rem;
+}
+
+.materials-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.material-item {
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+  text-align: center;
+  background: white;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 300ms ease;
+}
+
+.material-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.material-item.featured {
+  border: 3px solid #095ce5;
+}
+
+.material-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.material-item p {
+  font-family: "JosefinBold";
+  font-size: 1rem;
+  color: #202020;
+  margin: 0;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(135deg, #095ce5, #0847b8);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.video-thumbnail p {
+  font-family: "JosefinBold";
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+  color: white;
+}
+
+.video-thumbnail span {
+  font-family: "WorkSinLight";
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
   .case-studies-title {
