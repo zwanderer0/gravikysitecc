@@ -114,14 +114,41 @@ export default class CaseStudies extends Component {
 
               {activeTab === "mastercard" && (
                 <div className="case-study-content">
+                  <div className="case-study-visual">
+                    <ReactPlayer
+                      url="https://www.youtube.com/watch?v=Ug5k1j5CfM8"
+                      width="100%"
+                      height="300px"
+                      controls={true}
+                      className="case-study-video"
+                    />
+                  </div>
                   <h3>Mastercard Sustainable Payments Initiative</h3>
                   <p>
                     Mastercard and Doconomy launched innovative sustainable
                     payment solutions, with Graviky Labs providing the
                     sustainable materials technology. This groundbreaking
                     initiative connects financial technology with environmental
-                    impact.
+                    impact through the world's first carbon limit credit card.
                   </p>
+                  <div className="printed-materials">
+                    <h4>What We Created:</h4>
+                    <div className="materials-gallery">
+                      <div className="material-item">
+                        <img
+                          src={shirtImg}
+                          alt="Sustainable apparel with AIR-INK print"
+                        />
+                        <p>Sustainable Apparel</p>
+                      </div>
+                      <div className="material-item">
+                        <div className="video-thumbnail">
+                          <p>Payment Card Technology</p>
+                          <span>Watch the innovation video</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div className="case-study-stats">
                     <div className="stat">
                       <h4>Global</h4>
