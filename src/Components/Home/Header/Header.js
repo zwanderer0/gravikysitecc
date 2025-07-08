@@ -1,7 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 import "./Header.css";
-import times from "../../../assets/FFG.png";
+// Using TIME logo from provided URL
+const times =
+  "https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F1f8169a834b04424876e441fedb41264?format=webp&width=800";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { getNav } from "../../../action/actions";
@@ -9,7 +11,7 @@ import { getNav } from "../../../action/actions";
 class Header extends Component {
   state = {
     scrolled: false,
-    isNav: false
+    isNav: false,
   };
 
   isNav = () => {
@@ -37,7 +39,7 @@ class Header extends Component {
     }
   };
 
-  linkClicked = value => {
+  linkClicked = (value) => {
     this.props.getNav(value);
   };
 
@@ -181,9 +183,9 @@ class Header extends Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    navid: state.navid
+    navid: state.navid,
   };
 };
 
