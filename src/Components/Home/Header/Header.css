@@ -93,8 +93,8 @@
   height: auto;
   max-height: 140px;
   object-fit: contain;
-  align-self: center;
-  vertical-align: middle;
+  align-self: flex-start;
+  margin-top: 10px;
   transition: 400ms;
 }
 
