@@ -56,14 +56,41 @@ export default class CaseStudies extends Component {
             <div className="tab-content">
               {activeTab === "dell" && (
                 <div className="case-study-content">
+                  <div className="case-study-visual">
+                    <img
+                      src={dellCS}
+                      alt="Dell Case Study - AIR-INK Integration"
+                      className="case-study-image"
+                    />
+                  </div>
                   <h3>Dell Technologies Partnership</h3>
                   <p>
                     Graviky Labs collaborated with Dell Technologies to
                     implement sustainable printing solutions using AIR-INK
                     technology. This partnership demonstrates how
                     enterprise-level companies can integrate environmental
-                    responsibility into their core operations.
+                    responsibility into their core operations through innovative
+                    ink solutions.
                   </p>
+                  <div className="printed-materials">
+                    <h4>What We Printed:</h4>
+                    <div className="materials-gallery">
+                      <div className="material-item">
+                        <img
+                          src={packageImg}
+                          alt="Sustainable packaging printed with AIR-INK"
+                        />
+                        <p>Sustainable Packaging</p>
+                      </div>
+                      <div className="material-item">
+                        <img
+                          src={markerImg}
+                          alt="Writing instruments with AIR-INK"
+                        />
+                        <p>Writing Instruments</p>
+                      </div>
+                    </div>
+                  </div>
                   <div className="case-study-stats">
                     <div className="stat">
                       <h4>50+</h4>
