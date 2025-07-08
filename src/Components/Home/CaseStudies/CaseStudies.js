@@ -186,13 +186,13 @@ export default class CaseStudies extends Component {
                         className="case-study-video"
                       />
                     </div>
-                    <h3>Pangaia x AIR-INK Fashion Innovation</h3>
+                    <h3>Pangaia x AIR-INK T-Shirt Collection</h3>
                     <p>
                       The collaboration showcases how Graviky's AIR-INK
-                      technology revolutionizes fashion printing. From payment
-                      cards to high-fashion apparel, our sustainable ink creates
-                      products that celebrities and consumers alike can feel
-                      good about wearing and using.
+                      technology revolutionizes fashion printing. Our
+                      sustainable ink creates high-fashion t-shirts that
+                      celebrities and consumers alike can feel good about
+                      wearing, turning pollution into fashion.
                     </p>
                     <div className="printed-materials">
                       <h4>What We Printed:</h4>
