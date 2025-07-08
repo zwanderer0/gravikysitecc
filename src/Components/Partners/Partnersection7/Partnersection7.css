@@ -1,0 +1,76 @@
+.partnersection7-sontainer {
+    padding: 10% 7%;
+    width: 86%;
+    background: #fff;
+}
+
+.partnersection7-sontainer h1{
+    color: #212121;
+    font-size: 450%;
+    font-family: "JosefinBold";
+    line-height: 100%;
+}
+
+.partnersection7-sontainer p {
+    font-family: 'WorkSinLight';
+    font-size: 150%;
+    line-height: 150%;
+    color: #fff;
+}
+
+.partner-right-section {
+    width: 37%;
+}
+
+@media screen and (max-width: 900px) {
+    .partnersection7-sontainer {
+        padding: 15% 7%;
+    }
+
+    .partnersection7-sontainer > div {
+        flex-direction: column-reverse;
+    }
+
+    .partner-right-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .partnersection7-sontainer h1{
+        color: #fff;
+        font-size: 400%;
+        font-family: "JosefinBold";
+        line-height: 100%;
+    }
+    
+    .partnersection7-sontainer p {
+        font-family: 'WorkSinLight';
+        font-size: 150%;
+        line-height: 150%;
+        color: #fff;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .partnersection7-sontainer {
+        padding: 20% 5%;
+        width: 90%;
+    }
+
+    .partnersection7-sontainer h1{
+        color: #fff;
+        font-size: 200%;
+        font-family: "JosefinBold";
+        line-height: 100%;
+        margin-top: 0;
+    }
+    
+    .partnersection7-sontainer p {
+        font-family: 'WorkSinLight';
+        font-size: 100%;
+        line-height: 150%;
+        color: #fff;
+    }
+}

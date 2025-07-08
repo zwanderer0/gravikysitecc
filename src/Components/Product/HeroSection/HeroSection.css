@@ -1,0 +1,108 @@
+.hero-product-container {
+    padding: 13% 7%;
+    width: 86%;
+    background: rgba(171, 171, 171, 0.10);
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-product-right-subcontainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-air-ink-img {
+    width: 50%;
+    height: 430px;
+}
+
+.hero-product-right-subcontainer > h1 {
+    font-family: 'JosefinBold';
+    font-size: 450%;
+    margin: 0;
+}
+
+.hero-product-right-subcontainer > p {
+    font-family: 'WorkSinRegular';
+    font-size: 130%;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-product-container {
+        padding: 20% 7%;
+        width: 86%;
+        background: rgba(171, 171, 171, 0.10);;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-air-ink-img {
+        width: 70%;
+        height: 565px;;
+        padding-bottom: 10%;
+    }
+
+    .hero-product-right-subcontainer {
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    .hero-product-container {
+        padding: 20% 7% 20% 7%;
+        width: 86%;
+    }
+
+    .hero-product-right-subcontainer > h1 {
+        font-family: 'JosefinBold';
+        font-size: 400%;
+        margin: 0;
+        padding-top: 5%;
+    }
+    
+    .hero-product-right-subcontainer > p {
+        font-family: 'WorkSinRegular';
+        font-size: 150%;
+    }
+
+    .hero-product-right-subcontainer {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .hero-product-container {
+        padding: 40% 7% 35% 7%;
+        width: 86%;
+    }
+
+    .hero-air-ink-img {
+        width: 80%;
+        height: auto;
+    }
+
+    .hero-product-right-subcontainer > h1 {
+        font-family: 'JosefinBold';
+        font-size: 250%;
+        margin: 0;
+        padding-top: 10%;
+    }
+    
+    .hero-product-right-subcontainer > p {
+        font-family: 'WorkSinRegular';
+        font-size: 100%;
+        padding-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .hero-product-right-subcontainer {
+        width: 100%;
+    }
+}

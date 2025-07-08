@@ -1,0 +1,110 @@
+.partnersection2-container {
+    padding: 7% 0;
+    width: 100%;
+    background: #ffff;
+}
+
+.partnersection2-subcontainer {
+    padding-left: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partnersection2-subcontainer>div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.partnersection2-subcontainer>div>h1 {
+    font-size: 450%;
+    font-family: "JosefinBold";
+    width: 100%;
+}
+
+.partnersection2-subcontainer>div a {
+    font-family: 'WorkSinRegular';
+    text-decoration: none;
+    background: #095CE5;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 120%;
+    border-radius: 50px;
+}
+
+.partnersection2-subcontainer > div .register {
+    font-size: 70%;
+    padding-left: 2%;
+}
+
+.partnersection2-subcontainer>div .blue {
+    color: #095CE5;
+}
+
+.partnersection2-subcontainer>img {
+    width: 48%;
+}
+
+@media screen and (max-width: 1024px) {
+    .partnersection2-subcontainer>div a {
+        margin-top: 10%;
+    }
+} 
+
+@media screen and (max-width: 900px) {
+    .partnersection2-subcontainer>div a {
+        margin-top: 10%;
+    }
+
+    .partnersection2-subcontainer>div>h1 {
+        font-size: 400%;
+    }
+    
+    .partnersection2-subcontainer>div a {
+        font-size: 120%;
+        border-radius: 50px;
+    }
+    
+    .partnersection2-subcontainer > div .register {
+        font-size: 70%;
+        padding-left: 2%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .partnersection2-container {
+        padding: 0 0 20% 0;
+        width: 100%;
+        background: #FCFCFC;
+    }
+
+    .partnersection2-subcontainer {
+        padding-left: 0%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .partnersection2-subcontainer>div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .partnersection2-subcontainer>div>h1 {
+        font-size: 250%;
+        font-family: "JosefinBold";
+        margin-bottom: 0;
+        width: 80%;
+    }
+
+    .partnersection2-subcontainer>img {
+        width: 100%;
+    }
+}

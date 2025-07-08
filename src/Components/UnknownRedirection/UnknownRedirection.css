@@ -1,0 +1,66 @@
+.unknown-container {
+    padding: 0;
+    width: 100%;
+    background: #fff;
+    z-index: -10;
+}
+
+.unknown-sub-container {
+    padding: 5%;
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.unknown-sub-container > h1 {
+    position: absolute;
+    top: 10%;
+    font-family: 'JosefinBold';
+    font-size: 700%;
+}
+
+.floating-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+}
+
+.err {
+    color: #202020;
+    font-family: "JosefinBold";
+    font-size: 11rem;
+    position:absolute;
+    left: 31%;
+    top: 10%;
+  }
+
+.far {
+  position: absolute;
+  font-size: 8.5rem;
+  left: 42%;
+  top: 15%;
+  color: #202020;
+}
+
+ .err2 {
+    color: #202020;
+    font-family: "JosefinBold";
+    font-size: 11rem;
+    position:absolute;
+    left: 56%;
+    top: 10%;
+  }
+
+.msg {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+    position:absolute;
+    left: 16%;
+    top: 45%;
+    width: 75%;
+  }

@@ -1,0 +1,82 @@
+.section3-container {
+    background: #FCFCFC;
+    width: 80%;
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section3-subcontainer {
+    text-align: center;
+    color: #202020;
+    transition: 700ms;
+    width: 33%;
+}
+
+.section3-subcontainer > h4 {
+    font-family: 'JosefinBold';
+    font-size: 600%;
+    margin: 0;
+}
+
+.section3-subcontainer > h4 > span {
+    font-family: 'JosefinBold';
+}
+
+.section3-subcontainer > p {
+    font-family: 'WorkSinLight';
+    font-size: 130%;
+}
+
+.section3-subcontainer span {
+    font-family: 'WorkSinRegular';
+}
+
+.transparent {
+    color: transparent;
+}
+
+@media screen and (max-width: 1026px) {
+    .section3-subcontainer >  h4{
+        font-size: 500%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section3-container {
+        background: #FCFCFC;
+        width: 90%;
+        padding: 10% 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .section3-subcontainer > h4 {
+        font-family: 'JosefinBold';
+        font-size: 400%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section3-container {
+        padding: 10% 5%;
+        flex-direction: column;
+    }
+
+    .section3-subcontainer {
+        text-align: center;
+        color: #202020;
+        transition: 700ms;
+        padding: 10%;
+        width: 80%;
+    }
+
+    .section3-subcontainer > h4 {
+        font-family: 'JosefinBold';
+        font-size: 300%;
+        margin: 0;
+    }
+}

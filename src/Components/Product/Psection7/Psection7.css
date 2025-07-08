@@ -1,0 +1,119 @@
+.psrction7-container {
+    padding: 10% 7% 10% 7%;
+    width: 86%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pen-img {
+    width: 23%;
+}
+
+.psection7-right-container {
+    width: 40%;
+}
+
+.psection7-right-container > h1 {
+    font-family: 'JosefinBold';
+    font-size: 450%;
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+.psection7-right-container > p {
+    font-family: 'WorkSinLight';
+    font-size: 150%;
+    line-height: 150%;
+    margin: 0;
+    width: 80%;
+}
+
+.psection7-right-container > h4 {
+    font-family: 'JosefinBold';
+    font-size: 130%;
+    line-height: 190%;
+    letter-spacing: 0.3mm;
+    margin-bottom: 10%;
+}
+
+.artists-link {
+    text-decoration: none;
+    color: #202020;
+    display: flex;
+    align-items: center;
+    font-family: 'WorkSinLight';
+    font-size: 110%;
+    width: 100%;
+}
+
+.artists-link > img {
+    height: 25px;
+    padding-left: 5%;
+}
+
+@media screen and (max-width: 900px) {
+
+    .psrction7-container {
+        padding: 15% 5% 15% 5%;
+        width: 90%;
+    }
+
+    .psection7-right-container > h1 {
+        font-size: 400%;
+    }
+
+    .artists-link {
+        font-size: 100%;
+    }
+
+    .psection7-right-container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .psrction7-container {
+        padding: 20% 5%;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .psection7-right-container > h1 {
+        font-size: 250%;
+    }
+
+    .psection7-right-container > p {
+        font-size: 100%;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .psection7-right-container > h4 {
+        font-size: 100%;
+    }
+
+    .pen-img {
+        width: 30%;
+    }
+    
+    .psection7-right-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .artists-link {
+        justify-content: space-between;
+        /* border: 1px solid #d3cfcf; */
+        border-radius: 50px;
+        width: 94%;
+        padding: 1%;
+        padding-left: 4%;
+        font-size: 100%;
+        justify-content: center;
+    }
+
+
+}

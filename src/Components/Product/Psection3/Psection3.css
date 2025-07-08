@@ -1,0 +1,102 @@
+.psecton3-container {
+    padding: 7% 10%;
+    width: 80%;
+    background: #212121;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.psecton3-container > p {
+    font-family: 'WorkSinLight';
+    font-size: 150%;
+    text-align: center;
+    width: 60%;
+    color: #fff;
+}
+
+.product-feature-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding-top: 5%;
+}
+
+.product-feature-block {
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+    text-align: center;
+    height: 225px;
+}
+
+.product-feature-block > h4 {
+    font-family: 'JosefinBold';
+    font-size: 170%;
+    margin: 0;
+    margin-top: 2%;
+    letter-spacing: 0.4mm
+}
+
+.product-feature-block > p {
+    font-family: 'WorkSinLight';
+    font-size: 110%;
+    line-height: 150%;
+}
+
+.product-feature-block > img {
+    width: auto;
+    height: 65px;
+}
+
+@media screen and (max-width: 1024px) {
+    .product-feature-block {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 900px)  {
+
+    .psecton3-container {
+        padding: 15% 5%;
+        width: 90%;
+    }
+
+    .psecton3-container > p {
+        font-size: 150%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .psecton3-container {
+        padding: 20% 5%;
+        width: 90%;
+    }
+
+    .psecton3-container > p {
+        font-size: 100%;
+        width: 100%;
+    }
+
+    .product-feature-section {
+        justify-content: space-around;
+    }
+
+    .product-feature-block {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10%;
+        height: auto;
+        justify-content: space-around;
+        padding-top: 5%;
+    }
+}

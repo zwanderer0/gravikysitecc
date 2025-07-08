@@ -1,0 +1,200 @@
+.section4-container {
+    display: flex;
+    width: 84%;
+    padding: 7%;
+    background: #FFFFFF;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.air-ink-img {
+    width: 45%;
+}
+
+.section4-right-subcontainer {
+    width: 40%;
+}
+
+.section4-right-subcontainer > h1 {
+    font-family: 'JosefinBold';
+    font-size: 450%;
+    margin: 0;
+}
+
+.section4-right-subcontainer > h3 {
+    font-family: 'JosefinBold';
+    margin: 0;
+    font-size: 280%;
+}
+
+.section4-right-subcontainer > p {
+    font-family: 'WorkSinLight';
+    font-size: 150%;
+    width: 85%;
+    margin: 15% 0%;
+}
+
+.section4-right-subcontainer > p > span {
+    font-family: 'WorkSinBold';
+}
+
+.button-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.see-product-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #095CE5;
+    border-radius: 30px;
+    width: 40%;
+    height: 50px;
+    font-size: 100%;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'WorkSinRegular';
+}
+
+.dell-button {
+    border: 1px solid #979797;
+    color: #202020;
+    /* padding: 4% 7%; */
+    text-decoration: none;
+    border-radius: 30px;
+    font-family: 'WorkSinRegular';
+    width: 55%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .see-product-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: #095CE5;
+        border-radius: 30px;
+        width: 40%;
+        height: 50px;
+        font-size: 90%;
+        text-decoration: none;
+        color: #fff;
+        font-family: 'WorkSinRegular';
+    }
+
+    .button-container {
+        width:90%;
+    }
+
+    .dell-button {
+        font-size:90%;
+        width: 57%;
+    }
+
+    @media screen and (max-width: 900px) {
+        .section4-container {
+            display: flex;
+            width: 90%;
+            padding: 7% 5%;
+            background: #FFFFFF;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .section4-right-subcontainer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 10%;
+        }
+
+        .section4-right-subcontainer > p {
+            font-family: 'WorkSinLight';
+            font-size: 150%;
+            width: 85%;
+            margin: 5% 0%;
+        }
+
+        .air-ink-img {
+            width: 60%;
+        }
+
+        .see-product-button {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background: #095CE5;
+            border-radius: 50px;
+            width: 47%;
+            height: 50px;
+            font-size: 100%;
+            text-decoration: none;
+            color: #fff;
+            font-family: 'WorkSinRegular';
+        }
+
+        .button-container {
+            width:80%;
+        }
+
+        .dell-button {
+            font-size:100%;
+        }
+
+        .section4-right-subcontainer > h1 {
+            font-family: 'JosefinBold';
+            font-size: 300%;
+            margin: 0;
+        }
+
+        .section4-right-subcontainer > h3 {
+            font-family: 'JosefinBold';
+            margin: 0;
+            font-size: 250%;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .section4-container {
+        padding: 20% 5%;
+    }
+
+    .section4-right-subcontainer {
+        text-align: center;
+    }
+
+    .section4-right-subcontainer > h1 {
+        font-family: 'JosefinBold';
+        font-size: 250%;
+        margin: 0;
+    }
+
+    .section4-right-subcontainer > h3 {
+        font-family: 'JosefinBold';
+        margin: 0;
+        font-size: 150%;
+    }
+
+    .section4-right-subcontainer > p {
+        font-family: 'WorkSinLight';
+        font-size: 100%;
+        width: 85%;
+        margin: 10% 0%;
+    }
+
+    .see-product-button {
+        width: 47%;
+        height: 50px;
+    }
+
+}

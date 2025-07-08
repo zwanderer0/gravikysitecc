@@ -1,0 +1,28 @@
+.partnersection3-container {
+    background: #FCFCFC;
+    padding: 7%;
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partnersection3-container > h4 {
+    font-family: 'WorkSinMedium';
+    margin: 0;
+    margin-bottom: 5%;
+    letter-spacing: 0.5mm;
+}
+
+@media screen and (max-width: 900px) {
+    .partnersection3-container {
+        padding: 15% 7%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .partnersection3-container {
+        padding: 20% 5%;
+        width: 90%;
+    }
+}

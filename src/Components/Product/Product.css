@@ -1,0 +1,19 @@
+.hover-dot {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    top: 100px;
+    right: 7.6%;
+    background: black;
+    border-radius: 50px;
+    transition: 400ms;
+    opacity: 0.5;
+}
+
+.hover-dot:hover {
+    box-shadow: 0px 0px 20px #095CE5;
+    width: 50px;
+    transition: 400ms;
+    height: 50px;
+    right: 7%;
+}

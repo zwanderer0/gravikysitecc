@@ -1,0 +1,114 @@
+.partnersection8-container {
+    background: #FBFBFB;
+    padding: 7%;
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partnersection8-text-block {
+    width: 40%;
+}
+
+.partnersection8-text-block>h1 {
+    font-size: 450%;
+    font-family: "JosefinBold";
+    line-height: 90%;
+}
+
+.partnersection8-image-block {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.partnersection8-image-block>img {
+    width: 40%;
+    height: auto;
+    padding: 5%;
+    cursor: pointer;
+}
+
+.partnersection8-image-block-responsive {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .partnersection8-container {
+        padding: 15% 7%;
+        flex-direction: column-reverse;
+    }
+
+    .partnersection8-text-block a {
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .partnersection8-text-block>h1 {
+        font-size: 400%;
+    }
+
+    .partnersection8-text-block {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .partnersection8-image-block {
+        display: none;
+    }
+
+    .partnersection8-image-block-responsive {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 5%;
+    }
+
+    .partnersection8-image-block-responsive>img {
+        width: 40%;
+        height: auto;
+        padding: 5%;
+    }
+
+    .partnersection8-text-block>h1 {
+        font-size: 400%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .partnersection8-container {
+        padding: 20% 5%;
+        width: 90%;
+    }
+
+    .partnersection8-text-block>h1 {
+        font-size: 250%;
+    }
+
+    .partnersection8-text-block a {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 90%;
+    }
+
+    .partnersection8-text-block a > img {
+        padding: 0;
+    }
+
+    .fslightbox-container {
+        /* background: #202020; */
+    }
+}

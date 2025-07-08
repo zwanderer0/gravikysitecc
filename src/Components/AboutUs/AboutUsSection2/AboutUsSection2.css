@@ -1,0 +1,71 @@
+.aboutus-section2-container {
+    padding: 7%;
+    width: 86%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutus-section2-img-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 7%;
+}
+
+.aboutus-section2-img-container > img {
+    width: 31%;
+    height: auto;
+    padding: 1%;
+    cursor: pointer;
+}
+
+.insta-link {
+    text-decoration: none;
+    color: #202020;
+    display: flex;
+    align-items: center;
+    font-family: 'WorkSinLight';
+    font-size: 110%;
+    width: 330px;
+    justify-content: space-between;
+}
+
+.insta-link > img {
+    height: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+    .insta-link {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .aboutus-section2-container {
+        padding: 15% 7%;
+    }
+
+    .insta-link {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .aboutus-section2-container {
+        padding: 10% 5% 20% 5%;
+        width: 90%;
+    }
+
+    .insta-link {
+        width: 320px;
+    }
+
+    .aboutus-section2-img-container {
+        padding-bottom: 10%;
+    }
+}

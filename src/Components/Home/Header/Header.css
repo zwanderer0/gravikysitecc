@@ -1,0 +1,408 @@
+.main-header-container {
+    position: fixed;
+    width: 86%;
+    display: flex;
+    padding: 0% 7%;
+    align-items: center;
+    color: #202020;
+    justify-content: space-between;
+    transition: 300ms;
+    height: 75px;
+    
+}
+
+.white-header-container a {
+    color: #ffff;
+}
+
+.white-header-container {
+    position: fixed;
+    width: 86%;
+    display: flex;
+    padding: 0% 7%;
+    align-items: center;
+    color: #ffffff;
+    justify-content: space-between;
+    transition: 300ms;
+    height: 75px;
+    z-index: 10;
+}
+
+.main-header-container-1 {
+    position: fixed;
+    width: 86%;
+    display: flex;
+    padding: 0% 7%;
+    align-items: center;
+    color: #202020;
+    justify-content: space-between;
+    background: #fff;
+    transition: 300ms;
+    z-index: 100;
+    -webkit-box-shadow: 0 8px 6px -6px #DDDDDD;
+    -moz-box-shadow: 0 8px 6px -6px #DDDDDD;
+    box-shadow: 0 2px 0px 0px #DDDDDD;
+    height: 75px;
+}
+
+.logo-text {
+    font-family: 'JosefinBold';
+    text-decoration: none;
+    color: #202020;
+    font-size:150%;
+}
+
+.header-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JosefinBold';
+    width: 70%;
+    height: 100%;
+}
+
+.link-style {
+    font-family: 'JosefinBold';
+    text-decoration: none;
+    color: #202020;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.link-active {
+    box-shadow: inset 0 -3px 0 #095CE5;
+}
+
+.link-style:hover {
+    box-shadow: inset 0 -3px 0 #095CE5;
+}
+
+.social-logo-container {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+
+.social-logo-container>.fa:hover {
+    text-shadow: 5px 5px #095CE5;
+    cursor: pointer;
+}
+
+.times-img {
+    width: 8%;
+    /* height: 120%; */
+    transition: 400ms;
+}
+
+.time-img-small {
+    /* width: 7%; */
+    height: 70%;
+    transition: 400ms;
+}
+
+.nav-icon {
+    display: none;
+}
+
+.invisible {
+    display: none;
+}
+
+.my-links {
+    display: none;
+}
+
+.no-height {
+    display: none;
+}
+
+.dropdown-product {
+    float: left;
+    overflow: hidden;
+    height: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffff;
+    min-width: 160px;
+    z-index: 100;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    float: none;
+    padding: 15px 16px;
+    display: block;
+    text-align: left;
+    font-family: 'JosefinBold';
+    text-decoration: none;
+    color: #202020;
+  }
+
+  .dropdown-content a:hover{
+    background-color: rgb(243, 243, 243);
+  }
+
+.dropdown-product:hover .dropdown-content {
+    display: block;
+  }
+
+@media screen and (max-width: 1024px) {
+    .nav-icon {
+        display: block;
+        color: #202020;
+        font-size: 150%;
+    }
+
+    .white-header-container > .nav-icon {
+        color: #ffff;
+    }
+
+    .logo-text {
+        font-size: 150%;
+    }
+
+    .header-buttons-container {
+        display: none;
+    }
+
+
+
+    .main-header-container {
+        position: fixed;
+        width: 86%;
+        display: flex;
+        padding: 0% 7%;
+        align-items: center;
+        color: #202020;
+        justify-content: space-between;
+        transition: 300ms;
+        background: #fff;
+        height: 70px;
+    }
+
+    .main-header-container-1 {
+        position: fixed;
+        width: 86%;
+        display: flex;
+        padding: 0% 7%;
+        align-items: center;
+        color: #202020;
+        justify-content: space-between;
+        transition: 300ms;
+        height: 70px;
+        background: #fff;
+    }
+
+    .white-header-container {
+        height: 70px;
+    }
+
+    .my-links {
+        display: block;
+        overflow: hidden;
+        background-color: #fff;
+        position: fixed;
+        width: 100%;
+        z-index: 15;
+        top: 70px;
+        left: 0;
+        transition: 300ms;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .no-height {
+        display: block;
+        overflow: hidden;
+        background-color: #fff;
+        position: fixed;
+        width: 100%;
+        z-index: 15;
+        top: 70px;
+        left: 0;
+        height: 0%;
+        transition: 300ms;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .no-height>a {
+        transition: 300ms;
+        display: none;
+    }
+
+    .my-links a {
+        color: #202020;
+        padding: 20px 7%;
+        text-decoration: none;
+        display: block;
+        font-family: 'JosefinBold';
+        font-size: 130%;
+        transition: 600ms;
+        letter-spacing: 0.3mm;
+    }
+
+    .my-links a:hover {
+        background-color: #ddd;
+        color: #095CE5;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main-header-container {
+        position: fixed;
+        width: 90%;
+        display: flex;
+        padding: 0% 5%;
+        align-items: center;
+        color: #fff;
+        justify-content: space-between;
+        transition: 300ms;
+        height: auto;
+        background: #202020;
+        height: 70px;
+    }
+
+    .white-header-container {
+        position: fixed;
+        width: 90%;
+        display: flex;
+        padding: 0% 5%;
+        align-items: center;
+        color: #fff;
+        justify-content: space-between;
+        transition: 300ms;
+        height: auto;
+        background: transparent;
+        height: 70px;
+    }
+
+    .main-header-container-1 {
+        position: fixed;
+        width: 90%;
+        display: flex;
+        padding: 0% 5%;
+        align-items: center;
+        color: #fff;
+        justify-content: space-between;
+        transition: 300ms;
+        height: auto;
+        background: #202020;
+        box-shadow: none;
+        height: 70px;
+    }
+
+    .logo-text {
+        font-size: 150%;
+        color: #fff;
+    }
+
+    .nav-icon {
+        display: block;
+        color: #fff;
+        font-size: 250%;
+    }
+
+    .my-links {
+        display: block;
+        overflow: hidden;
+        background-color: #202020;
+        position: fixed;
+        width: 100%;
+        z-index: 15;
+        top: 70px;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        overflow: scroll;
+        height: 50px;
+        align-items: center;
+    }
+
+    .no-height {
+        top: 70px;
+        background-color: #202020;
+    }
+
+    .my-links a {
+        color: #fff;
+        padding: 0px;
+        text-decoration: none;
+        display: block;
+        font-family: 'JosefinBold';
+        font-size: 90%;
+        letter-spacing: 0.3mm;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .my-links a:hover {
+        background-color: #ddd;
+        color: #095CE5;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .main-header-container {
+        padding: 0 5%;
+        height: 50px;
+    }
+
+    .white-header-container {
+        padding: 0 5%;
+        height: 50px;
+    }
+
+    .main-header-container-1 {
+        padding: 0 5%;
+        height: 50px;
+    }
+
+    .logo-text {
+        font-size: 150%;
+    }
+
+    .nav-icon {
+        display: block;
+        color: #fff;
+        font-size: 150%;
+    }
+
+    .my-links a {
+        font-size: 100%;
+        padding-left: 5%;
+        width: 95%;
+    }
+
+    .my-links {
+        display: block;
+        overflow: hidden;
+        background-color: #202020;
+        position: fixed;
+        width: 100%;
+        z-index: 15;
+        top: 50px;
+        left: 0;
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        overflow: scroll;
+        align-items: flex-start;
+    }
+
+    .no-height {
+        top: 50px;
+        background-color: #202020;
+    }
+}

@@ -1,0 +1,90 @@
+.psection-container {
+    padding: 5% 7%;
+    background: #FCFCFC;
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.psection-container > h4 {
+    font-family: 'WorkSinMedium';
+    margin: 0;
+    margin-bottom: 5%;
+    letter-spacing: 0.5mm
+}
+
+.logo-containers {
+    width: 90%;
+}
+
+.product-logo-img {
+    height: 50px;
+    width: auto;
+    display: block;
+    filter: grayscale(100%);
+    transition: 200ms;
+}
+
+.custom-dell-size {
+    height: 40px;
+}
+
+.product-logo-img:hover {
+    filter: grayscale(0%);
+    transition: 200ms;
+}
+
+@media screen and (max-width: 1024px) {
+    .product-logo-img {
+        height: 40px;
+        width: auto;
+        display: block;
+        filter: grayscale(100%);
+        transition: 200ms;
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .product-logo-img {
+        height: 30px;
+        width: auto;
+        display: block;
+        filter: grayscale(100%);
+        transition: 200ms;
+        padding: 5%;
+    }
+
+    .logo-containers {
+        width: 100%;
+    }
+    .psection-container {
+        padding: 15% 7%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .psection-container {
+        padding: 20% 5%;
+        width: 90%;
+    }
+
+    .product-logo-img {
+        display: block;
+        filter: grayscale(100%);
+        transition: 200ms;
+        padding: 7%;
+        width: 30%;
+        height: auto;
+    }
+
+    .custom-dell-size {
+        width: 28%;
+    }
+
+    .custom-master-size {
+        width: 17%;
+    }
+}

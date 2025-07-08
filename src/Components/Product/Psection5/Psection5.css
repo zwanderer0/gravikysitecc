@@ -1,0 +1,100 @@
+.psection5-container {
+    padding: 7%;
+    background: #222222;
+    width: 86%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexo-img {
+    width: 50%;
+}
+
+.psection5-right-container {
+    width: 40%;
+    color: #ffff;
+}
+
+.psection5-right-container > h1 {
+    font-family: 'JosefinBold';
+    font-size: 450%;
+    margin: 0;
+}
+
+.psection5-right-container > p {
+    font-family: 'WorkSinLight';
+    font-size: 150%;
+    line-height: 150%;
+    margin: 0;
+    width: 80%;
+}
+
+.psection5-right-container > h4 {
+    font-family: 'JosefinBold';
+    font-size: 130%;
+    line-height: 190%;
+    letter-spacing: 0.3mm;
+    margin-bottom: 20%;
+}
+
+.contact-sales-button {
+    font-family: 'WorkSinRegular';
+    font-size: 120%;
+    text-decoration: none;
+    background: #ffff;
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: #095CE5;
+}
+
+@media screen and (max-width: 900px) {
+    .psection5-container {
+        flex-direction: column;
+        padding: 15% 7%;
+    }
+
+    .psection5-right-container  {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .psection5-right-container > h1 {
+        font-size: 400%;
+        margin: 0;
+    }
+
+    .flexo-img {
+        padding-bottom: 5%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .psection5-container {
+        flex-direction: column;
+        padding: 20% 5%;
+        width: 90%;
+    }
+
+    .psection5-right-container > h1 {
+        font-size: 250%;
+    }
+
+    .psection5-right-container > p {
+        font-size: 100%;
+    }
+
+    .psection5-right-container > h4 {
+        font-size: 100%;
+    }
+
+    .flexo-img {
+        width: 90%;
+    }
+
+}
+

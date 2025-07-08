@@ -1,0 +1,76 @@
+.partnersection5-container {
+    /* background-image: url('../../../assets/meeting.png');
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center; */
+    padding: 7% 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #202020;
+}
+
+.partnersection5-container h1 {
+    font-size: 450%;
+    font-family: "JosefinBold";
+    margin: 0;
+    color: #fff;
+    padding-bottom: 5%;
+}
+
+.partners5-text {
+    color: #fff;
+    margin: 0;
+    font-family: 'WorkSinLight';
+    line-height: 150%;
+    font-size: 150%;
+    width: 80%;
+    padding-bottom: 5%;
+}
+
+@media screen and (max-width: 1024px) {
+    .partnersection5-container {
+        /* background-image: url('../../../assets/meeting.png');
+        background-repeat: no-repeat;
+        background-size: 150%; */
+        padding: 15% 5%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .partnersection5-container {
+        /* background-image: url('../../../assets/meeting.png');
+        background-repeat: no-repeat;
+        background-size: 200%; */
+        padding: 7%;
+        /* background-position: center; */
+    }
+
+    .partnersection5-container h1 {
+        font-size: 400%;
+    }
+
+    .partners5-text {
+    padding-bottom: 10%;
+    font-size: 150%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .partnersection5-container {
+        padding: 20% 5%;
+    }
+
+    .partnersection5-container h1 {
+        font-size: 250%;
+    }
+
+    .partners5-text {
+        font-size: 100%;
+        width: 100%;
+        padding-bottom: 10%;
+    }
+
+}

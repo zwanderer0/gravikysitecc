@@ -1,0 +1,137 @@
+.partnersection9-container {
+    padding: 7%;
+    width: 86%;
+    background: #212121;
+}
+
+.partnersection9-container > h1 {
+    font-size: 450%;
+    font-family: "JosefinBold";
+    text-align: center;
+    justify-content: space-between;
+    padding-bottom: 5%;
+    color: #fff;
+}
+
+.partnersection9-container p {
+    font-family: 'WorkSinLight';
+    font-size: 150%;
+    color: #fff;
+    width: 70%;
+    line-height: 150%;
+}
+
+.sacestudies-sub-container {
+    display: flex;
+    justify-content: space-between;;
+    align-items: center;
+    width: 100%;
+}
+
+.partner-left-section {
+    width: 50%;
+}
+
+.partner-left-section > h1 {
+    font-size: 400%;
+    font-family: "JosefinBold";
+    line-height: 100%;
+    color: #fff;
+}
+
+.video-section {
+    width: 50%;
+}
+
+a {
+    color:#fff;
+}
+
+@media screen and (max-width: 900px) {
+
+    .partnersection9-container {
+        padding: 7% 7% 15% 7%;
+        width: 86%;
+        background: #212121;
+    }
+
+
+    .sacestudies-sub-container {
+        flex-direction: column;
+        padding-top: 0%;
+    }
+
+    .partnersection9-container > h1 {
+        font-size: 400%;
+    }
+
+    .partner-left-section {
+        width: 80%;
+        text-align: center;
+    }
+
+    .partner-left-section > h1 {
+        font-size: 400%;
+        text-align: center;
+    }
+
+    .partnersection9-container p {
+        font-family: 'WorkSinLight';
+        font-size: 150%;
+        width: 100%;
+        line-height: 150%;
+    }
+
+    .video-section {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .partnersection9-container {
+        padding: 20% 5%;
+        width: 90%;
+        background: #212121;
+    }
+
+    .sacestudies-sub-container {
+        flex-direction: column;
+        padding-top: 5%;
+    }
+
+    .partnersection9-container > h1 {
+        font-size: 250%;
+    }
+
+    .partner-left-section > h1 {
+        font-size: 200%;
+        text-align: center;
+    }
+
+    .partnersection9-container p {
+        font-family: 'WorkSinLight';
+        font-size: 100%;
+        width: 100%;
+        line-height: 150%;
+    }
+
+    .video-section {
+        width: 100%;
+    }
+
+    .partnersection7-sontainer h1{
+        color: #212121;
+        font-size: 250%;
+        font-family: "JosefinBold";
+        line-height: 100%;
+    }
+    
+    .partnersection7-sontainer p {
+        font-family: 'WorkSinLight';
+        font-size: 100%;
+        line-height: 150%;
+        color: #212121;
+    }
+
+}

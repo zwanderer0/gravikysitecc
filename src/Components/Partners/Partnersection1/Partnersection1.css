@@ -1,0 +1,115 @@
+.partnersection1-container {
+    background: #FCFCFC;
+    padding: 7%;
+    width: 86%;
+}
+
+.partnersection1-top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    border-bottom: 2px solid #E4E4E4;
+    padding-bottom: 20px;
+}
+
+.partnersection1-top-container > h1 {
+    font-size: 450%;
+    font-family: "JosefinBold";
+    text-align: center;
+    width: 40%;
+}
+
+.partnersection1-top-container > p {
+    margin: 0;
+    font-family: 'WorkSinLight';
+    line-height: 150%;
+    font-size: 150%;
+    width: 50%
+}
+
+.partnersection1-bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.partnersection1-bottom-container > div {
+    width: 30%;
+}
+
+.partnersection1-bottom-container > div > h3 {
+    font-size: 130%;
+    letter-spacing: 0.3mm;
+    font-family: 'JosefinBold';
+}
+
+.partnersection1-bottom-container > div > p {
+    font-family: 'WorkSinRegular';
+}
+
+@media screen and (max-width: 900px) {
+
+    .partnersection1-top-container {
+        flex-direction: unset;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .partnersection1-top-container > h1 {
+        font-size: 400%;
+        width: 100%;
+    }
+
+    .partnersection1-top-container > p {
+        font-size: 150%;
+        text-align: center;
+        width: 80%;
+    }
+
+    .partnersection1-bottom-container {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .partnersection1-container {
+        padding: 20% 5%;
+        width: 90%;
+    }
+    .partnersection1-top-container {
+        flex-direction: unset;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .partnersection1-top-container > h1 {
+        font-size: 250%;
+        width: 100%;
+    }
+
+    .partnersection1-top-container > p {
+        font-size: 100%;
+        text-align: center;
+        width: 80%;
+    }
+
+    .partnersection1-bottom-container {
+        padding-top: 50px;
+    }
+
+    .partnersection1-bottom-container {
+        flex-direction: column;
+    }
+
+    .partnersection1-bottom-container > div {
+        width: 100%;
+        text-align: center;
+        width: 80%;
+        padding-bottom: 30px;
+    }
+
+}

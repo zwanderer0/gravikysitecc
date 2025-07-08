@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: #202020;
+}
+
+@font-face {
+  font-family: JosefinBold;
+  src: url(../src/assets/Josefin_Sans_Family/JosefinSans-Bold.ttf)
+}
+
+@font-face {
+  font-family: JosefinLight;
+  src: url(../src/assets/Josefin_Sans_Family/JosefinSans-Light.ttf)
+}
+
+@font-face {
+  font-family: JosefinRegular;
+  src: url(../src/assets/Josefin_Sans_Family/JosefinSans-Regular.ttf)
+}
+
+@font-face {
+  font-family: JosefinThin;
+  src: url(../src/assets/Josefin_Sans_Family/JosefinSans-Thin.ttf)
+}
+
+@font-face {
+  font-family: WorkSinRegular;
+  src: url(../src/assets/Work_Sans/WorkSans-Regular.ttf)
+}
+
+@font-face {
+  font-family: WorkSinLight;
+  src: url(../src/assets/Work_Sans/WorkSans-Light.ttf)
+}
+
+@font-face {
+  font-family: WorkSinBold;
+  src: url(../src/assets/Work_Sans/WorkSans-Bold.ttf)
+}
+
+@font-face {
+  font-family: WorkSinMedium;
+  src: url(../src/assets/Work_Sans/WorkSans-Medium.ttf)
+}
+
+@font-face {
+  font-family: WorkSinRegular;
+  src: url(../src/assets/Work_Sans/WorkSans-Regular.ttf)
+}

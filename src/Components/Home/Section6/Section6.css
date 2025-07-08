@@ -1,0 +1,172 @@
+.section6-container {
+    padding: 5% 10%;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section6-container > h1 {
+    font-family: 'JosefinBold';
+    font-size: 450%;
+    margin: 0;
+    margin-bottom: 4%;
+}
+
+.section6-container > p {
+    font-family: 'WorkSinLight';
+    font-size: 150%;
+    width: 58%;
+    line-height: 140%;
+    margin: 0;
+    margin-bottom: 7%;
+}
+
+.feature-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature-block {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+    height: 225px;
+}
+
+.feature-block > h4 {
+    font-family: 'JosefinBold';
+    font-size: 170%;
+    margin: 0;
+    margin-top: 2%;
+    letter-spacing: 0.4mm
+}
+
+.feature-block > p {
+    font-family: 'WorkSinLight';
+    font-size: 110%;
+    line-height: 150%;
+}
+
+.feature-block > img {
+    width: auto;
+    height: 65px;
+}
+
+@media screen and (max-width: 1024px) {
+    .section6-container {
+        padding: 5% 10%;
+        width: 80%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-block {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+
+    .feature-block > h4 {
+        font-family: 'JosefinBold';
+        font-size: 170%;
+        margin: 0;
+        margin-top: 2%;
+        letter-spacing: 0.4mm
+    }
+    
+    .feature-block > p {
+        font-family: 'WorkSinLight';
+        font-size: 110%;
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section6-container {
+        padding: 10% 5%;
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section6-container > h1 {
+        font-family: 'JosefinBold';
+        font-size: 300%;
+        margin: 0;
+        margin-bottom: 4%;
+    }
+
+    .section6-container > p {
+        font-family: 'WorkSinLight';
+        font-size: 150%;
+        width: 75%;
+        line-height: 140%;
+        margin: 0;
+        margin-bottom: 10%;
+    }
+
+    .feature-block {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5%;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section6-container {
+        padding: 20% 5%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .section6-container > h1 {
+        font-size: 250%;
+    }
+
+    .section6-container > p {
+        font-size: 100%;
+    }
+
+    .feature-section {
+        justify-content: space-around;
+    }
+
+    .feature-block {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10%;
+        height: 170px;
+        justify-content: space-around;
+    }
+
+    .feature-block > h4 {
+        margin-top: 1%;
+    }
+    
+    .feature-block > p {
+        font-family: 'WorkSinLight';
+        font-size: 100%;
+        line-height: 120%;
+        margin: 1%;
+    }
+}
+

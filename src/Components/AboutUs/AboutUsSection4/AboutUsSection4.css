@@ -1,0 +1,95 @@
+.aboutus-section4-container {
+    padding: 7%;
+    width: 86%;
+    text-align: center;
+}
+
+.aboutus-section4-container > h1 {
+    font-size: 450%;
+    font-family: "JosefinBold";
+    line-height: 100%;
+    margin-bottom: 10%;
+}
+
+.aboutus-section4-team-block {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-block-section {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 1%; */
+    padding-bottom: 5%;
+}
+
+.team-block-section > img {
+    width: 68%;
+    padding-bottom: 15%;
+}
+
+.team-block-section > p {
+    font-family: 'WorkSinRegular';
+    font-size: 90%;
+    margin: 0;
+    padding-bottom: 5%;
+}
+
+.team-block-section > h4 {
+    font-family: 'WorkSinBold';
+    font-size: 90%;
+    margin: 0;
+    padding-bottom: 5%;
+}
+
+@media screen and (max-width: 900px) {
+    .aboutus-section4-container > h1 {
+        font-size: 400%;
+    }
+
+    .aboutus-section4-team-block {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .team-block-section {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .aboutus-section4-container {
+        padding: 20% 5%;
+        width: 90%;
+    }
+
+    .aboutus-section4-container > h1 {
+        font-size: 250%;
+    }
+
+    .team-block-section {
+        height: 160px;
+        padding-bottom: 5%;
+    }
+
+    .team-block-section > p {
+        font-size: 50%;
+    }
+
+    .team-block-section > h4 {
+        font-size: 50%;
+    }
+}

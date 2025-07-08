@@ -1,0 +1,86 @@
+.aboutus-section3-container {
+    background: #FCFCFC;
+    padding: 7%;
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutus-section3-container>h4 {
+    font-family: "JosefinBold";
+    margin: 0;
+    margin-bottom: 5%;
+    letter-spacing: 0.5mm;
+    font-size:450%;
+}
+
+.aboutus-logo-containers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 6%;
+}
+
+.aboutus-logo-img {
+    /* height: 40px;
+    width: auto; */
+    width: 20%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%);
+    transition: 200ms;
+}
+
+.aboutus-logo-img1 {
+    width: 8%;
+    display: block;
+    filter: grayscale(100%);
+    transition: 200ms;
+}
+
+.ted-aboutus {
+    width: 9%;
+}
+
+.Daco-aboutus {
+    width: 12%;
+}
+
+.forbes-logo {
+    width: 6%;
+}
+
+.dandad-logo {
+    width:8%;
+}
+
+.aboutus-logo-img1:hover,
+.aboutus-logo-img:hover {
+    filter: grayscale(0%);
+    transition: 200ms;
+}
+
+@media screen and (max-width: 500px) {
+    .aboutus-section3-container {
+        background: #FCFCFC;
+        padding: 20% 5%;
+        width: 90%;
+    }
+
+    .aboutus-logo-containers {
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 10%;
+    }
+
+    .aboutus-logo-img {
+        width: 40%;
+        padding: 5% 0;
+    }
+
+    .aboutus-logo-img1 {
+        width: 15%;
+    }
+}

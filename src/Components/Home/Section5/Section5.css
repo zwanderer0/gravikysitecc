@@ -1,0 +1,117 @@
+.section5-container {
+    padding: 5% 7%;
+    background: #FCFCFC;
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section5-container > h4 {
+    font-family: 'WorkSinMedium';
+    margin: 0;
+    margin-bottom: 5%;
+    letter-spacing: 0.5mm
+}
+
+.logo-containers {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%
+}
+
+.logo-img {
+    height: 30px;
+    width: auto;
+    display: block;
+    filter: grayscale(100%);
+    transition: 200ms;
+}
+
+.logo-img:hover {
+    filter: grayscale(0%);
+    transition: 200ms;
+}
+
+ @media screen and (max-width: 1024px)    {
+    .section5-container {
+        padding: 10% 5%;
+        background: #FCFCFC;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-containers {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .logo-img {
+        height: 40px;
+        width: auto;
+        display: block;
+        filter: grayscale(100%);
+        transition: 200ms;
+        padding: 5%;
+    }
+
+    .section5-container > h4 {
+        font-family: 'WorkSinMedium';
+        margin: 0;
+        margin-bottom: 5%;
+        letter-spacing: 0.5mm;
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo-containers {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .section5-container {
+        padding: 20% 7%;
+        background: #FCFCFC;
+        width: 84%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-containers {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%
+    }
+
+    .logo-img {
+        height: 30px;
+        width: auto;
+        display: block;
+        transition: 200ms;
+        padding: 8%;
+    }
+
+    .section5-container > h4 {
+        font-family: 'WorkSinMedium';
+        margin: 0;
+        margin-bottom: 5%;
+        letter-spacing: 0.5mm;
+        font-size: 150%;
+    }
+}

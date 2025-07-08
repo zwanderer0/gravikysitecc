@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="71px" height="71px" viewBox="0 0 71 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>shield</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Product-page-2.0-V2" transform="translate(-699.000000, -1775.000000)" stroke="#095CE5">
+            <g id="shield" transform="translate(701.000000, 1777.000000)">
+                <polygon id="Path" stroke-width="2" points="34.5 16 38.6710057 24.2296875 48 25.5484375 41.25 31.9546875 42.8420114 41 34.5 36.7296875 26.1579886 41 27.75 31.9546875 21 25.5484375 30.3289943 24.2296875"></polygon>
+                <path d="M33.5,67 C33.5,67 0,52.6428571 0,9.57142857 L33.5,0 L67,9.57142857 C67,52.6428571 33.5,67 33.5,67 Z" id="Path" stroke-width="3"></path>
+            </g>
+        </g>
+    </g>
+</svg>
