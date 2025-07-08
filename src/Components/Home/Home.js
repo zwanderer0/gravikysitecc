@@ -27,6 +27,7 @@ class Home extends Component {
         <Section2 />
         <Section4New />
         <Section4 />
+        <CaseStudies />
         <Section5 />
         <Section6 />
         <Section7 />
