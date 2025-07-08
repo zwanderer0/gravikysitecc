@@ -139,18 +139,12 @@ export default class CaseStudies extends Component {
                     <div className="printed-materials">
                       <h4>What We Created:</h4>
                       <div className="materials-gallery">
-                        <div className="material-item">
+                        <div className="material-item featured">
                           <img
-                            src={shirtImg}
-                            alt="Sustainable apparel with AIR-INK print"
+                            src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fca1817a0309547b2b39c0721066cebaf?format=webp&width=800"
+                            alt="Doconomy Mastercard Credit Card with AIR-INK"
                           />
-                          <p>Sustainable Apparel</p>
-                        </div>
-                        <div className="material-item">
-                          <div className="video-thumbnail">
-                            <p>Payment Card Technology</p>
-                            <span>Watch the innovation video</span>
-                          </div>
+                          <p>Carbon Limit Credit Cards</p>
                         </div>
                       </div>
                     </div>
