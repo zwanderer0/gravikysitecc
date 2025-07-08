@@ -89,9 +89,9 @@
 }
 
 .times-img {
-  width: 8%;
+  width: 16%;
   height: auto;
-  max-height: 60px;
+  max-height: 120px;
   object-fit: contain;
   transition: 400ms;
 }
