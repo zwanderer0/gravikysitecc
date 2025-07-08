@@ -87,8 +87,7 @@
   background: #f8f9fa;
   border-radius: 20px;
   padding: 3rem;
-  margin: 0 auto;
-  max-width: 800px;
+  flex: 1;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
