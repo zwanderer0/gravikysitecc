@@ -175,7 +175,7 @@ export default class CaseStudies extends Component {
                   </div>
                 )}
 
-                {activeTab === "doconomy" && (
+                {activeTab === "pangaia" && (
                   <div className="case-study-content">
                     <div className="case-study-visual">
                       <ReactPlayer
