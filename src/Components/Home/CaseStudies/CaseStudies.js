@@ -90,12 +90,12 @@ export default class CaseStudies extends Component {
                     </div>
                     <div className="case-study-stats">
                       <div className="stat">
-                        <h4>50+</h4>
-                        <p>Million pages printed sustainably</p>
+                        <h4>Enterprise</h4>
+                        <p>Scale collaboration</p>
                       </div>
                       <div className="stat">
-                        <h4>2.5 tons</h4>
-                        <p>Carbon emissions captured</p>
+                        <h4>Academic</h4>
+                        <p>Research partnership</p>
                       </div>
                     </div>
                     <a
