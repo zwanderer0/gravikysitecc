@@ -172,30 +172,59 @@ export default class CaseStudies extends Component {
 
               {activeTab === "doconomy" && (
                 <div className="case-study-content">
-                  <h3>Doconomy Mastercard Innovation</h3>
+                  <div className="case-study-visual">
+                    <ReactPlayer
+                      url="https://youtu.be/rqlQd-vfOTk?si=HFEfNL2p0Ki2535B&t=18"
+                      width="100%"
+                      height="300px"
+                      controls={true}
+                      className="case-study-video"
+                    />
+                  </div>
+                  <h3>Pangaia x AIR-INK Fashion Innovation</h3>
                   <p>
-                    The collaboration between Doconomy and Mastercard showcases
-                    how Graviky's technology enables the creation of payment
-                    cards made from recycled materials, setting new standards
-                    for sustainable financial products.
+                    The collaboration showcases how Graviky's AIR-INK technology
+                    revolutionizes fashion printing. From payment cards to
+                    high-fashion apparel, our sustainable ink creates products
+                    that celebrities and consumers alike can feel good about
+                    wearing and using.
                   </p>
+                  <div className="printed-materials">
+                    <h4>What We Printed:</h4>
+                    <div className="materials-gallery">
+                      <div className="material-item featured">
+                        <img
+                          src={naomiCampbell}
+                          alt="Naomi Campbell wearing Pangaia x AIR-INK apparel"
+                        />
+                        <p>Naomi Campbell in Pangaia x AIR-INK</p>
+                      </div>
+                      <div className="material-item">
+                        <img
+                          src={shirtImg}
+                          alt="Sustainable fashion with AIR-INK"
+                        />
+                        <p>Sustainable Fashion Collection</p>
+                      </div>
+                    </div>
+                  </div>
                   <div className="case-study-stats">
                     <div className="stat">
-                      <h4>First</h4>
-                      <p>Sustainable payment card</p>
+                      <h4>Celebrity</h4>
+                      <p>Endorsements achieved</p>
                     </div>
                     <div className="stat">
                       <h4>100%</h4>
-                      <p>Recycled materials used</p>
+                      <p>Recycled carbon used</p>
                     </div>
                   </div>
                   <a
-                    href="https://youtu.be/rqlQd-vfOTk?si=HFEfNL2p0Ki2535B&t=18"
+                    href="https://thepangaia.com/pages/airink"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="case-study-link"
                   >
-                    Watch Innovation Video
+                    Explore Pangaia Collection
                   </a>
                 </div>
               )}
