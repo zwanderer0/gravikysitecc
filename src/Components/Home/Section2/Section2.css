@@ -10,11 +10,11 @@
 
 .content-layout {
   display: grid;
-  grid-template-columns: 1fr 1.2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem;
   width: 100%;
   max-width: 1400px;
-  align-items: start;
+  align-items: center;
 }
 
 .left-content,
@@ -33,136 +33,88 @@
 .section-label {
   font-family: "JosefinBold";
   color: #2c2c2c;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 0 0 1.5rem 0;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
 }
 
-/* Impact Section Styles */
-.impact-section {
+/* Problem Section Styles (Red theme) */
+.problem-section {
   background: #fff;
   border-radius: 15px;
   padding: 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid #dc3545;
+  border-left: 5px solid #dc3545;
+  width: 100%;
 }
 
-.impact-stats {
+.problem-stats {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
-.impact-stat {
+.problem-stat {
   text-align: center;
-  padding: 1rem;
-  background: #f8f9fa;
+  padding: 1.2rem;
+  background: #ffedef;
   border-radius: 10px;
+  border: 1px solid #f5c6cb;
 }
 
-.impact-number {
+.problem-number {
   font-family: "JosefinBold";
   color: #dc3545;
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: 0 0 0.5rem 0;
 }
 
-.impact-desc {
+.problem-desc {
   font-family: "WorkSinRegular";
-  color: #555;
-  font-size: 0.9rem;
+  color: #721c24;
+  font-size: 0.95rem;
   margin: 0;
   line-height: 1.4;
 }
 
-.citation {
-  font-family: "WorkSinLight";
-  color: #666;
-  font-size: 0.8rem;
-  margin: 0;
-  font-style: italic;
-  text-align: center;
-}
-
-/* Main Message Styles */
-.headline-text {
-  font-family: "JosefinBold";
-  color: #2c2c2c;
-  font-size: 2.2rem;
-  margin: 0 0 1.5rem 0;
-  line-height: 1.3;
-}
-
-.subtext {
-  font-family: "WorkSinRegular";
-  color: #555;
-  font-size: 1.1rem;
-  margin: 0 0 2rem 0;
-  line-height: 1.6;
-}
-
-.process-highlight {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  background: #2c2c2c;
-  border-radius: 15px;
-  padding: 1.5rem;
-  margin: 2rem 0;
-}
-
-.process-step {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fff;
-}
-
-.step-number {
-  font-family: "JosefinBold";
-  font-size: 1.5rem;
-  background: #095ce5;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0.5rem;
-}
-
-.step-text {
-  font-family: "WorkSinRegular";
-  font-size: 0.9rem;
-}
-
-.process-arrow {
-  color: #095ce5;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-/* Slider Styles */
-.transformation-slider {
+/* Solution Section Styles (Green theme) */
+.solution-section {
   background: #fff;
   border-radius: 15px;
   padding: 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid #28a745;
+  border-left: 5px solid #28a745;
+  text-align: center;
+}
+
+.solution-text {
+  font-family: "WorkSinRegular";
+  color: #155724;
+  font-size: 1.1rem;
+  margin: 0;
+  line-height: 1.6;
+  background: #f0f9ff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #bee5eb;
+}
+
+/* Before/After Slider Styles */
+.before-after-slider {
   width: 100%;
+  max-width: 400px;
 }
 
 .slider-container {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 350px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-bottom: 1rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 .slide {
@@ -172,7 +124,7 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -185,73 +137,78 @@
 
 .slider-image {
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
-.slide-caption {
-  font-family: "WorkSinRegular";
-  color: #555;
+.slide-label {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(44, 44, 44, 0.9);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-family: "JosefinBold";
   font-size: 0.9rem;
-  margin: 0.5rem 0 0 0;
-  text-align: center;
+  letter-spacing: 1px;
 }
 
 .slider-dots {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.8rem;
 }
 
 .dot {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background: #ccc;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .dot.active {
   background: #28a745;
+  transform: scale(1.2);
 }
 
 .dot:hover {
   background: #28a745;
+  transform: scale(1.1);
 }
 
 /* Tablet styles */
 @media screen and (max-width: 1024px) {
   .content-layout {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 2.5rem;
     text-align: center;
   }
 
-  .headline-text {
-    font-size: 2rem;
-  }
-
-  .impact-stats {
+  .problem-stats {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .impact-stat {
+  .problem-stat {
     flex: 1;
     min-width: 150px;
+    margin: 0.5rem;
   }
 
-  .process-highlight {
-    flex-direction: column;
-    gap: 0.5rem;
+  .slider-container {
+    height: 300px;
+    max-width: 350px;
+    margin: 0 auto 1rem auto;
   }
 
-  .process-arrow {
-    transform: rotate(90deg);
+  .slider-image {
+    height: 250px;
   }
 }
 
@@ -261,33 +218,35 @@
     padding: 8% 5%;
   }
 
-  .headline-text {
-    font-size: 1.6rem;
-  }
-
-  .subtext {
-    font-size: 1rem;
-  }
-
-  .impact-section,
-  .transformation-slider {
+  .problem-section,
+  .solution-section {
     padding: 1.5rem;
   }
 
-  .impact-stats {
+  .problem-stats {
     flex-direction: column;
   }
 
-  .impact-number {
-    font-size: 1.5rem;
+  .problem-stat {
+    margin: 0;
+  }
+
+  .problem-number {
+    font-size: 1.8rem;
+  }
+
+  .solution-text {
+    font-size: 1rem;
+    padding: 1.2rem;
   }
 
   .slider-container {
-    height: 200px;
+    height: 250px;
+    max-width: 300px;
   }
 
   .slider-image {
-    height: 150px;
+    height: 200px;
   }
 }
 
@@ -296,34 +255,40 @@
     padding: 10% 5%;
   }
 
-  .headline-text {
-    font-size: 1.4rem;
+  .content-layout {
+    gap: 2rem;
   }
 
-  .impact-section,
-  .transformation-slider {
+  .problem-section,
+  .solution-section {
     padding: 1rem;
   }
 
-  .impact-number {
-    font-size: 1.3rem;
+  .problem-number {
+    font-size: 1.5rem;
   }
 
-  .process-highlight {
+  .problem-desc {
+    font-size: 0.85rem;
+  }
+
+  .solution-text {
+    font-size: 0.9rem;
     padding: 1rem;
-  }
-
-  .step-number {
-    width: 35px;
-    height: 35px;
-    font-size: 1.2rem;
   }
 
   .slider-container {
-    height: 180px;
+    height: 220px;
+    max-width: 250px;
   }
 
   .slider-image {
-    height: 130px;
+    height: 170px;
+  }
+
+  .slide-label {
+    bottom: 10px;
+    padding: 6px 15px;
+    font-size: 0.8rem;
   }
 }
