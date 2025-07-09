@@ -85,10 +85,9 @@ export default class AboutUsSection1 extends Component {
             <div className="timeline-item reverse">
               <div className="timeline-image">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fd653fbe13bec4d378750f6416a434d8d?format=webp&width=800"
-                  alt="Global art movement"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Faedad2b829c944cea10a4b82ab70d24f?format=webp&width=800"
+                  alt="Global art movement gallery exhibition"
                   className="story-image-crop"
-                  style={{ objectPosition: "50% 0%", objectFit: "cover" }}
                 />
               </div>
               <div className="timeline-content">
