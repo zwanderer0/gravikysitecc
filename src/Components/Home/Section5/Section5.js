@@ -11,7 +11,6 @@ export default class Section5 extends Component {
   render() {
     return (
       <div className="section5-container">
-        <h4>MEDIA COVERAGE</h4>
         <ScrollAnimation animateIn="fadeIn" className="logo-containers">
           <a
             href="https://www.nationalgeographic.com/environment/article/air-pollution-recycled-into-ink"
