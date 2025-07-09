@@ -1,38 +1,103 @@
 .section2-container {
-  width: 90%;
-  background-image: url("../../../assets/section2.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   display: flex;
   flex-direction: column;
-  text-align: center;
-  justify-content: center;
   align-items: center;
-  padding: 8% 5%;
+  padding: 5% 2%;
   min-height: 600px;
-  gap: 2rem;
+  gap: 3rem;
 }
 
-.light-text {
-  font-family: "WorkSinLight";
-  color: #fff;
-  padding: 0% 7%;
-  font-size: 150%;
-  margin: 0;
-  transition: 200ms;
-}
-
-.transparent {
-  color: transparent;
-}
-
-.stats-grid {
+.content-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 3rem;
   width: 100%;
-  max-width: 800px;
-  margin-bottom: 2rem;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.left-content,
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-content {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.carbon-samples-section,
+.processed-samples-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-label {
+  font-family: "JosefinBold";
+  color: #2c2c2c;
+  font-size: 1.2rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.carbon-samples-image,
+.processed-samples-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.carbon-samples-image:hover,
+.processed-samples-image:hover {
+  transform: translateY(-5px);
+}
+
+.sample-caption {
+  font-family: "WorkSinRegular";
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+  text-align: center;
+  max-width: 250px;
+  line-height: 1.4;
+}
+
+.main-message {
+  max-width: 500px;
+}
+
+.headline-text {
+  font-family: "JosefinBold";
+  color: #2c2c2c;
+  font-size: 2.5rem;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+}
+
+.subtext {
+  font-family: "WorkSinRegular";
+  color: #555;
+  font-size: 1.1rem;
+  margin: 0 0 2rem 0;
+  line-height: 1.6;
+}
+
+.stats-highlight {
+  background: #2c2c2c;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 5px 20px rgba(44, 44, 44, 0.2);
 }
 
 .stat-item {
@@ -42,69 +107,34 @@
 .stat-number {
   font-family: "JosefinBold";
   color: #fff;
-  font-size: 3rem;
-  margin: 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .stat-label {
   font-family: "WorkSinRegular";
-  color: #fff;
+  color: #ccc;
   font-size: 1rem;
-  margin: 0.5rem 0 0 0;
-  opacity: 0.9;
-}
-
-.main-message {
-  max-width: 700px;
-  margin: 1rem 0;
-}
-
-.headline-text {
-  font-family: "JosefinBold";
-  color: #fff;
-  font-size: 2.2rem;
-  margin: 0 0 1rem 0;
-  line-height: 1.2;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.subtext {
-  font-family: "WorkSinRegular";
-  color: #fff;
-  font-size: 1.2rem;
-  margin: 0;
-  opacity: 0.9;
-  line-height: 1.4;
-}
-
-.citation {
-  margin-top: 1rem;
-}
-
-.citation p {
-  font-family: "WorkSinLight";
-  color: #fff;
-  font-size: 0.8rem;
-  margin: 0;
-  opacity: 0.7;
-  font-style: italic;
-}
-
-.transparent {
-  color: transparent;
+  display: block;
 }
 
 .learn-more-button {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  background: #095ce5;
+  justify-content: center;
+  background: #2c2c2c;
   border-radius: 30px;
-  width: 18%;
+  width: 200px;
   height: 57px;
   font-size: 120%;
-  margin-top: 5%;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(44, 44, 44, 0.3);
+}
+
+.learn-more-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(44, 44, 44, 0.4);
 }
 
 .learn-more-button > a {
@@ -113,48 +143,33 @@
   font-family: "WorkSinRegular";
 }
 
+/* Tablet styles */
 @media screen and (max-width: 1024px) {
-  .transparent {
-    color: #fff;
+  .content-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
   }
 
-  .learn-more-button {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: #095ce5;
-    border-radius: 30px;
-    width: 25%;
-    height: 57px;
-    font-size: 150%;
-    margin-top: 5%;
+  .headline-text {
+    font-size: 2.2rem;
+  }
+
+  .carbon-samples-image,
+  .processed-samples-image {
+    max-width: 250px;
   }
 }
 
-@media screen and (max-width: 900px) {
+/* Mobile styles */
+@media screen and (max-width: 768px) {
   .section2-container {
-    width: 90%;
-    background-image: url("../../../assets/section2.jpg");
-    background-repeat: no-repeat;
-    background-size: 200%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 10% 5%;
-    min-height: 500px;
-    background-position: center;
-    gap: 1.5rem;
+    padding: 8% 5%;
+    gap: 2rem;
   }
 
-  .stats-grid {
-    grid-template-columns: 1fr;
+  .content-layout {
     gap: 1.5rem;
-  }
-
-  .stat-number {
-    font-size: 2.5rem;
   }
 
   .headline-text {
@@ -162,63 +177,49 @@
   }
 
   .subtext {
-    font-size: 1.1rem;
+    font-size: 1rem;
+  }
+
+  .section-label {
+    font-size: 1rem;
+  }
+
+  .carbon-samples-image,
+  .processed-samples-image {
+    max-width: 200px;
   }
 
   .learn-more-button {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: #095ce5;
-    border-radius: 30px;
-    width: 50%;
-    height: 57px;
-    font-size: 150%;
-    margin-top: 5%;
-  }
-
-  .light-text {
-    padding: 0% 0%;
-  }
-
-  .medium-text {
-    padding: 0% 0%;
+    width: 250px;
+    height: 50px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .section2-container {
-    background-size: 500%;
-    padding: 20% 5%;
-    gap: 1rem;
-  }
-
-  .stats-grid {
-    gap: 1rem;
-  }
-
-  .stat-number {
-    font-size: 2rem;
-  }
-
-  .stat-label {
-    font-size: 0.9rem;
+    padding: 10% 5%;
   }
 
   .headline-text {
     font-size: 1.5rem;
   }
 
-  .subtext {
-    font-size: 1rem;
+  .stat-number {
+    font-size: 1.5rem;
   }
 
-  .citation p {
-    font-size: 0.7rem;
+  .carbon-samples-image,
+  .processed-samples-image {
+    max-width: 180px;
+  }
+
+  .sample-caption {
+    font-size: 0.8rem;
   }
 
   .learn-more-button {
-    width: 80%;
-    height: 50px;
+    width: 200px;
+    height: 45px;
+    font-size: 100%;
   }
 }
