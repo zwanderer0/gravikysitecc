@@ -112,10 +112,9 @@ export default class AboutUsSection1 extends Component {
               </div>
               <div className="timeline-image">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fd653fbe13bec4d378750f6416a434d8d?format=webp&width=800"
-                  alt="Artist collaborations"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F650b986f0e2f4b5f8f91d3d9ce0e50ab?format=webp&width=800"
+                  alt="Artist creating mural with AIR-INK"
                   className="story-image-crop"
-                  style={{ objectPosition: "100% 0%", objectFit: "cover" }}
                 />
               </div>
             </div>
