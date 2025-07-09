@@ -67,12 +67,12 @@
 
   .logo-containers {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: auto;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    gap: 8px;
+    gap: 6px;
   }
 
   .logo-img {
