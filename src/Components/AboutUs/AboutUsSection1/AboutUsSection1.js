@@ -7,11 +7,14 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+
 var url = "https://www.youtube.com/watch?v=Dig_QFPPPtE";
+
 export default class AboutUsSection1 extends Component {
   state = {
     innerWidth: window.innerWidth,
   };
+
   render() {
     return (
       <div className="aboutus-section1-container">
@@ -29,143 +32,177 @@ export default class AboutUsSection1 extends Component {
           animateIn="fadeIn"
           className="aboutus-section1-textblock"
         >
-                    <h1>Our Story</h1>
+          <h1>Our Story</h1>
 
           <VerticalTimeline>
-            <div className="timeline-item">
-              <div className="timeline-content">
-                <h3>MIT Media Lab Origins</h3>
-                <p>
-                  Graviky began as an MIT Media Lab experiment when we hacked
-                  together a tool to capture soot from a burning candle and used
-                  the closest available solvents - vodka and vegetable oil - to
-                  produce a rough version of what is now AIR–INK<sup>®</sup>.
-                </p>
-              </div>
-              <div className="timeline-image">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F79b3dc6167af4351b13de0f0f3dd85f1?format=webp&width=800"
-                  alt="MIT Media Lab candle soot experiment device"
-                  className="story-image-crop"
-                />
-              </div>
-            </div>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{
+                background: "#fff",
+                color: "#333",
+                boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)",
+                border: "1px solid rgba(9, 92, 229, 0.1)",
+              }}
+              contentArrowStyle={{ borderRight: "7px solid #095CE5" }}
+              iconStyle={{ background: "#095CE5", color: "#fff" }}
+              icon={<div style={{ fontSize: "20px" }}>🔬</div>}
+            >
+              <h3 className="vertical-timeline-element-title">
+                MIT Media Lab Origins
+              </h3>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F79b3dc6167af4351b13de0f0f3dd85f1?format=webp&width=800"
+                alt="MIT Media Lab candle soot experiment device"
+                className="timeline-image"
+              />
+              <p>
+                Graviky began as an MIT Media Lab experiment when we hacked
+                together a tool to capture soot from a burning candle and used
+                the closest available solvents - vodka and vegetable oil - to
+                produce a rough version of what is now AIR–INK®.
+              </p>
+            </VerticalTimelineElement>
 
-            <div className="timeline-item reverse">
-              <div className="timeline-image">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F23614e7658c54d8ab38b1b497cdb7857?format=webp&width=800"
-                  alt="Street art with AIR-INK - This art is painted with air pollution"
-                  className="story-image-crop"
-                />
-              </div>
-              <div className="timeline-content">
-                <h3>2016: Heineken Collaboration</h3>
-                <p>
-                  In 2016, with the idea of turning carbon emissions into
-                  variety of inks and paints we collaborated with Heineken.
-                  AIR-INK<sup>®</sup> was born out of this collaboration.
-                </p>
-              </div>
-            </div>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{
+                background: "#fff",
+                color: "#333",
+                boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)",
+                border: "1px solid rgba(9, 92, 229, 0.1)",
+              }}
+              contentArrowStyle={{ borderRight: "7px solid #095CE5" }}
+              iconStyle={{ background: "#095CE5", color: "#fff" }}
+              icon={<div style={{ fontSize: "20px" }}>🍺</div>}
+            >
+              <h3 className="vertical-timeline-element-title">
+                2016: Heineken Collaboration
+              </h3>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F23614e7658c54d8ab38b1b497cdb7857?format=webp&width=800"
+                alt="Street art with AIR-INK - This art is painted with air pollution"
+                className="timeline-image"
+              />
+              <p>
+                In 2016, with the idea of turning carbon emissions into variety
+                of inks and paints we collaborated with Heineken. AIR-INK® was
+                born out of this collaboration.
+              </p>
+            </VerticalTimelineElement>
 
-            <div className="timeline-item">
-              <div className="timeline-content">
-                <h3>Global Art Movement</h3>
-                <p>
-                  Since then, AIR-INK<sup>®</sup> has kickstarted a public art
-                  movement spanning cities as diverse as Hong Kong, London, New
-                  York, Mumbai, Berlin, Singapore, Delhi and many more.
-                </p>
-              </div>
-              <div className="timeline-image">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fd653fbe13bec4d378750f6416a434d8d?format=webp&width=800"
-                  alt="AIR-INK development process"
-                  className="story-image-crop"
-                  style={{ objectPosition: "0% 0%", objectFit: "cover" }}
-                />
-              </div>
-            </div>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{
+                background: "#fff",
+                color: "#333",
+                boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)",
+                border: "1px solid rgba(9, 92, 229, 0.1)",
+              }}
+              contentArrowStyle={{ borderRight: "7px solid #095CE5" }}
+              iconStyle={{ background: "#095CE5", color: "#fff" }}
+              icon={<div style={{ fontSize: "20px" }}>🎨</div>}
+            >
+              <h3 className="vertical-timeline-element-title">
+                Global Art Movement
+              </h3>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F650b986f0e2f4b5f8f91d3d9ce0e50ab?format=webp&width=800"
+                alt="Artist creating mural with AIR-INK"
+                className="timeline-image"
+              />
+              <p>
+                Since then, AIR-INK® has kickstarted a public art movement
+                spanning cities as diverse as Hong Kong, London, New York,
+                Mumbai, Berlin, Singapore, Delhi and many more. Carbon emissions
+                which could have been in the lungs of millions of people are now
+                resting as art created by over a thousand artists like Doodle
+                Man, Christian Furr, Kristoes and Imagine.
+              </p>
+            </VerticalTimelineElement>
 
-            <div className="timeline-item reverse">
-              <div className="timeline-image">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F650b986f0e2f4b5f8f91d3d9ce0e50ab?format=webp&width=800"
-                  alt="Artist creating mural with AIR-INK"
-                  className="story-image-crop"
-                />
-              </div>
-              <div className="timeline-content">
-                <h3>Global Art Movement</h3>
-                <p>
-                  Since then, AIR-INK<sup>®</sup> has kickstarted a public art
-                  movement spanning cities as diverse as Hong Kong, London, New
-                  York, Mumbai, Berlin, Singapore, Delhi and many more. Carbon
-                  emissions which could have been in the lungs of millions of
-                  people are now resting as art created by over a thousand
-                  artists like Doodle Man, Christian Furr, Kristoes and Imagine.
-                </p>
-              </div>
-            </div>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{
+                background: "#fff",
+                color: "#333",
+                boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)",
+                border: "1px solid rgba(9, 92, 229, 0.1)",
+              }}
+              contentArrowStyle={{ borderRight: "7px solid #095CE5" }}
+              iconStyle={{ background: "#095CE5", color: "#fff" }}
+              icon={<div style={{ fontSize: "20px" }}>🔬</div>}
+            >
+              <h3 className="vertical-timeline-element-title">
+                Safety & Innovation
+              </h3>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fddfa66a83401431f86784c12b5b7e5cb?format=webp&width=800"
+                alt="Laboratory testing and research"
+                className="timeline-image"
+              />
+              <p>
+                The carbon emissions are sequestered as usable pigments and ink.
+                We further test the inks for safety and cleanliness, constantly
+                looking for ways to improve and advance this research.
+              </p>
+            </VerticalTimelineElement>
 
-            <div className="timeline-item reverse">
-              <div className="timeline-image">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fddfa66a83401431f86784c12b5b7e5cb?format=webp&width=800"
-                  alt="Laboratory testing and research"
-                  className="story-image-crop"
-                />
-              </div>
-              <div className="timeline-content">
-                <h3>Safety & Innovation</h3>
-                <p>
-                  The carbon emissions are sequestered as usable pigments and
-                  ink. We further test the inks for safety and cleanliness,
-                  constantly looking for ways to improve and advance this
-                  research.
-                </p>
-              </div>
-            </div>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{
+                background: "#fff",
+                color: "#333",
+                boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)",
+                border: "1px solid rgba(9, 92, 229, 0.1)",
+              }}
+              contentArrowStyle={{ borderRight: "7px solid #095CE5" }}
+              iconStyle={{ background: "#095CE5", color: "#fff" }}
+              icon={<div style={{ fontSize: "20px" }}>🏆</div>}
+            >
+              <h3 className="vertical-timeline-element-title">
+                Global Standards
+              </h3>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fb920b3e69fd6467d858bd2c279b8e135?format=webp&width=800"
+                alt="Lab worker with carbon tank equipment"
+                className="timeline-image"
+              />
+              <p>
+                With the help of third party global accredited labs we analyse
+                and further segregate the carbon emissions as re-viable to
+                ensure that the AIR-INK® formulations are safe for consumer
+                use.
+              </p>
+            </VerticalTimelineElement>
 
-            <div className="timeline-item">
-              <div className="timeline-content">
-                <h3>Global Standards</h3>
-                <p>
-                  With the help of third party global accredited labs we analyse
-                  and further segregate the carbon emissions as re-viable to
-                  ensure that the AIR-INK<sup>®</sup> formulations are safe for
-                  consumer use.
-                </p>
-              </div>
-              <div className="timeline-image">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fb920b3e69fd6467d858bd2c279b8e135?format=webp&width=800"
-                  alt="Lab worker with carbon tank equipment"
-                  className="story-image-crop"
-                />
-              </div>
-            </div>
-
-            <div className="timeline-item reverse">
-              <div className="timeline-image">
-                <img
-                  src="https://cdn.builder.io/o/assets%2F2891faa92b574a07a8369948a9a1f207%2Fdb26c67b0850473fa21320f841181d2d?alt=media&token=b098222f-b3de-4ba0-9e40-f26175176059&apiKey=2891faa92b574a07a8369948a9a1f207"
-                  alt="Industrial printing progression with AIR-INK"
-                  className="story-image-crop"
-                />
-              </div>
-              <div className="timeline-content">
-                <h3>Industry Integration</h3>
-                <p>
-                  Over the last few years, we have developed different grades of
-                  AIR-INK<sup>®</sup> that are classified and used by our
-                  printing partners across industry to reduce the carbon
-                  footprint of their printing processes.
-                </p>
-              </div>
-            </div>
-          </div>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{
+                background: "#fff",
+                color: "#333",
+                boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)",
+                border: "1px solid rgba(9, 92, 229, 0.1)",
+              }}
+              contentArrowStyle={{ borderRight: "7px solid #095CE5" }}
+              iconStyle={{ background: "#095CE5", color: "#fff" }}
+              icon={<div style={{ fontSize: "20px" }}>🏭</div>}
+            >
+              <h3 className="vertical-timeline-element-title">
+                Industry Integration
+              </h3>
+              <img
+                src="https://cdn.builder.io/o/assets%2F2891faa92b574a07a8369948a9a1f207%2Fdb26c67b0850473fa21320f841181d2d?alt=media&token=b098222f-b3de-4ba0-9e40-f26175176059&apiKey=2891faa92b574a07a8369948a9a1f207"
+                alt="Industrial printing progression with AIR-INK"
+                className="timeline-image"
+              />
+              <p>
+                Over the last few years, we have developed different grades of
+                AIR-INK® that are classified and used by our printing partners
+                across industry to reduce the carbon footprint of their printing
+                processes.
+              </p>
+            </VerticalTimelineElement>
+          </VerticalTimeline>
         </ScrollAnimation>
       </div>
     );
