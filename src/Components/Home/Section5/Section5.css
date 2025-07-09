@@ -112,14 +112,15 @@
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    gap: 5px;
   }
 
   .logo-img {
-    height: 30px;
+    height: 22px;
     width: auto;
     display: block;
     transition: 200ms;
-    padding: 8%;
+    padding: 4%;
   }
 
   .section5-container > h4 {
