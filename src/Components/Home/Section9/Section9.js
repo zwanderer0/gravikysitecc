@@ -65,17 +65,21 @@ class Section9 extends Component {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(formData).toString()
     })
-    .then(() => {
-      alert.success("Thanks, We will get back to you! ;)");
-      this.setState({ 
-        isLoading: 0, 
-        name: "", 
-        email: "", 
-        message: "", 
-        title: "", 
-        organization: "", 
-        interest: "" 
-      });
+    .then(response => {
+      if (response.ok) {
+        alert.success("Thanks, We will get back to you! ;)");
+        this.setState({ 
+          isLoading: 0, 
+          name: "", 
+          email: "", 
+          message: "", 
+          title: "", 
+          organization: "", 
+          interest: "" 
+        });
+      } else {
+        throw new Error('Network response was not ok');
+      }
     })
     .catch(error => {
       this.setState({ isLoading: 0 });
@@ -93,7 +97,7 @@ class Section9 extends Component {
         <h1>Contact Us</h1>
         <p>Begin your carbon negative journey</p>
         {/* Hidden form for Netlify Forms detection */}
-        <form name="contact" netlify="true" hidden>
+        <form name="contact" netlify hidden>
           <input type="text" name="name" />
           <input type="email" name="email" />
           <input type="text" name="title" />
