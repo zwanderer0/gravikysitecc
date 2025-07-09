@@ -37,7 +37,7 @@ class UnknownRedirection extends Component {
       return <Redirect to="/" />;
     }
     if (this.props.location.pathname === "/partnerships.html") {
-      return <Redirect to="/partners/" />;
+      return <Redirect to="/partners" />;
     }
     return (
       <div className="unknown-container">
