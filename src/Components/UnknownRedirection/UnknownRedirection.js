@@ -22,7 +22,7 @@ class UnknownRedirection extends Component {
       return <Redirect to="/" />;
     }
     if (this.props.location.pathname === "/kaalink.html") {
-      return <Redirect to="/product/" />;
+      return <Redirect to="/product" />;
     }
     if (this.props.location.pathname === "/join-us.html") {
       return <Redirect to="/" />;
