@@ -164,16 +164,7 @@ export default class CaseStudies extends Component {
                         </div>
                       </div>
                     </div>
-                    <div className="case-study-stats">
-                      <div className="stat">
-                        <h4>Global</h4>
-                        <p>Reach and implementation</p>
-                      </div>
-                      <div className="stat">
-                        <h4>2019</h4>
-                        <p>Partnership launch year</p>
-                      </div>
-                    </div>
+
                     <a
                       href="https://www.mastercard.com/news/press/2019/february/mastercard-and-doconomy-launch-the-future-of-sustainable-payments/"
                       target="_blank"
