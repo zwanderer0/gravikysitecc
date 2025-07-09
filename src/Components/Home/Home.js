@@ -25,7 +25,6 @@ class Home extends Component {
         <Header />
         <LandingPage />
         <Section2 />
-        <Section4New />
         <Section4 />
         <CaseStudies />
         <Section5 />
