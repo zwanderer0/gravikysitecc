@@ -25,6 +25,59 @@
   line-height: 150%;
 }
 
+/* Timeline Styles */
+.story-timeline {
+  margin-top: 3rem;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+  gap: 3rem;
+}
+
+.timeline-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.timeline-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.timeline-content h3 {
+  font-family: "JosefinBold";
+  font-size: 2rem;
+  color: #095ce5;
+  margin-bottom: 1rem;
+}
+
+.timeline-content p {
+  font-family: "WorkSinRegular";
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.timeline-image {
+  flex: 0 0 300px;
+  height: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.story-image-crop {
+  width: 100%;
+  height: 100%;
+  transition: transform 300ms ease;
+}
+
+.story-image-crop:hover {
+  transform: scale(1.05);
+}
+
 @media screen and (max-width: 900px) {
   .aboutus-section1-container {
     flex-direction: column-reverse;
