@@ -10,7 +10,7 @@ import ReactPlayer from "react-player";
 
 export default class CaseStudies extends Component {
   state = {
-    activeTab: "dell",
+    activeTab: "diageo",
     lightboxOpen: false,
     lightboxImage: null,
     lightboxAlt: "",
