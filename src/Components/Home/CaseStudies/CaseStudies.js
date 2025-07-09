@@ -252,6 +252,77 @@ export default class CaseStudies extends Component {
                     </a>
                   </div>
                 )}
+
+                {activeTab === "diageo" && (
+                  <div className="case-study-content">
+                    <div className="case-study-visual">
+                      <ReactPlayer
+                        url="https://www.youtube.com/watch?v=YSSW5uqsEoc"
+                        width="100%"
+                        height="300px"
+                        controls={true}
+                        className="case-study-video"
+                      />
+                    </div>
+                    <h3>Diageo Johnnie Walker AIR-INK Edition</h3>
+                    <p>
+                      We worked closely with Diageo's leadership and printing
+                      partners to introduce AIR-INK based offsetting into their
+                      supply chain, and launch across 12 geographies. Diageo
+                      produced the Johnnie Walker AIR-INK edition, now on sale
+                      in 16 countries worldwide.
+                    </p>
+                    <div className="printed-materials">
+                      <h4>What We Created:</h4>
+                      <div className="materials-gallery">
+                        <div className="material-item featured">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fdffb70f8e68f488da942721e9c5cb64f?format=webp&width=800"
+                            alt="Johnnie Walker Black Label AIR-INK edition bottle - Click to enlarge"
+                            onClick={() =>
+                              this.openLightbox(
+                                "https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fdffb70f8e68f488da942721e9c5cb64f?format=webp&width=1200",
+                                "Johnnie Walker Black Label AIR-INK edition with sustainable packaging",
+                              )
+                            }
+                          />
+                          <p>Johnnie Walker AIR-INK Edition</p>
+                        </div>
+                        <div className="material-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F6f88663aa6d840b89f89c823c076246e?format=webp&width=800"
+                            alt="Johnnie Walker AIR-INK marketing campaign - Click to enlarge"
+                            onClick={() =>
+                              this.openLightbox(
+                                "https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F6f88663aa6d840b89f89c823c076246e?format=webp&width=1200",
+                                "Johnnie Walker AIR-INK global marketing campaign",
+                              )
+                            }
+                          />
+                          <p>Global Marketing Campaign</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="case-study-stats">
+                      <div className="stat">
+                        <h4>16</h4>
+                        <p>Countries launch</p>
+                      </div>
+                      <div className="stat">
+                        <h4>12</h4>
+                        <p>Geographies covered</p>
+                      </div>
+                    </div>
+                    <a
+                      href="https://hypebeast.com/2022/10/johnnie-walker-air-ink-collaboration-unboxing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="case-study-link"
+                    >
+                      Read Hypebeast Article
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           </div>
