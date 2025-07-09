@@ -27,12 +27,28 @@ export default class AboutUsSection1 extends Component {
     const scrolled = window.pageYOffset;
     const parallax1 = document.querySelector(".ink-brush-1");
     const parallax2 = document.querySelector(".ink-brush-2");
+    const parallax3 = document.querySelector(".ink-brush-3");
+    const parallax4 = document.querySelector(".ink-brush-4");
+    const parallax5 = document.querySelector(".ink-brush-5");
+    const parallax6 = document.querySelector(".ink-brush-6");
 
     if (parallax1) {
       parallax1.style.transform = `rotate(15deg) translateY(${scrolled * 0.1}px)`;
     }
     if (parallax2) {
       parallax2.style.transform = `rotate(-25deg) translateY(${scrolled * -0.05}px)`;
+    }
+    if (parallax3) {
+      parallax3.style.transform = `rotate(45deg) translateY(${scrolled * 0.08}px)`;
+    }
+    if (parallax4) {
+      parallax4.style.transform = `rotate(-35deg) translateY(${scrolled * -0.07}px)`;
+    }
+    if (parallax5) {
+      parallax5.style.transform = `rotate(55deg) translateY(${scrolled * 0.06}px)`;
+    }
+    if (parallax6) {
+      parallax6.style.transform = `rotate(-15deg) translateY(${scrolled * -0.04}px)`;
     }
   };
 
