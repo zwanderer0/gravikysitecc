@@ -48,10 +48,9 @@ export default class AboutUsSection1 extends Component {
             <div className="timeline-item reverse">
               <div className="timeline-image">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fd653fbe13bec4d378750f6416a434d8d?format=webp&width=800"
-                  alt="Heineken collaboration"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F23614e7658c54d8ab38b1b497cdb7857?format=webp&width=800"
+                  alt="Street art with AIR-INK - This art is painted with air pollution"
                   className="story-image-crop"
-                  style={{ objectPosition: "25% 0%", objectFit: "cover" }}
                 />
               </div>
               <div className="timeline-content">
