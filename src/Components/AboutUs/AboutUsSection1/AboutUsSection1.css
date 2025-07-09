@@ -75,13 +75,48 @@
 .timeline-content {
   flex: 1;
   max-width: 500px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(9, 92, 229, 0.1);
+  position: relative;
+}
+
+.timeline-content::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 2px;
+  background: #095ce5;
+  transform: translateY(-50%);
+}
+
+.timeline-item .timeline-content::before {
+  right: -32px;
+}
+
+.timeline-item.reverse .timeline-content::before {
+  left: -32px;
 }
 
 .timeline-content h3 {
   font-family: "JosefinBold";
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #095ce5;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.timeline-content h3::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #095ce5;
+  border-radius: 50%;
 }
 
 .timeline-content p {
@@ -89,14 +124,26 @@
   font-size: 1.1rem;
   line-height: 1.6;
   color: #555;
+  margin: 0;
 }
 
 .timeline-image {
-  flex: 0 0 300px;
-  height: 200px;
-  border-radius: 15px;
+  flex: 0 0 350px;
+  height: 250px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  border: 3px solid #fff;
+  position: relative;
+}
+
+.timeline-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 17px;
+  background: linear-gradient(135deg, rgba(9, 92, 229, 0.1), transparent);
+  pointer-events: none;
 }
 
 .story-image-crop {
