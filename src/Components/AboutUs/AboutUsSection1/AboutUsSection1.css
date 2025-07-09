@@ -170,25 +170,42 @@
     font-size: 150%;
   }
 
+  /* Hide central line on mobile */
+  .story-timeline::before {
+    display: none;
+  }
+
   .timeline-item,
   .timeline-item.reverse {
     flex-direction: column;
     text-align: center;
     gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .timeline-item::before {
+    display: none;
+  }
+
+  .timeline-content::before {
+    display: none;
   }
 
   .timeline-image {
     flex: none;
     width: 100%;
     max-width: 400px;
+    height: 200px;
   }
 
   .timeline-content {
     max-width: none;
+    width: 100%;
   }
 
   .timeline-content h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    justify-content: center;
   }
 }
 
