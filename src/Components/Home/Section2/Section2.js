@@ -88,9 +88,7 @@ export default class Section2 extends Component {
                       alt="Raw PM2.5 carbon samples from emission sources"
                       className="slider-image"
                     />
-                    <p className="slide-caption">
-                      Raw PM2.5 emissions captured
-                    </p>
+                    <div className="slide-label">BEFORE</div>
                   </div>
                   <div
                     className={`slide ${this.state.currentSlide === 1 ? "active" : ""}`}
