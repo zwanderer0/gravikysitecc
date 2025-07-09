@@ -137,7 +137,7 @@ export default class CaseStudies extends Component {
                       <ReactPlayer
                         url="https://youtu.be/rqlQd-vfOTk?si=B7E5GT_J1uvyOiUk&t=16"
                         width="100%"
-                        height="300px"
+                        height="250px"
                         controls={true}
                         className="case-study-video"
                       />
@@ -186,7 +186,7 @@ export default class CaseStudies extends Component {
                       <ReactPlayer
                         url="https://www.youtube.com/watch?v=LRZedVsNulk"
                         width="100%"
-                        height="300px"
+                        height="250px"
                         controls={true}
                         className="case-study-video"
                       />
@@ -247,7 +247,7 @@ export default class CaseStudies extends Component {
                       <ReactPlayer
                         url="https://www.youtube.com/watch?v=YSSW5uqsEoc"
                         width="100%"
-                        height="300px"
+                        height="250px"
                         controls={true}
                         className="case-study-video"
                       />
