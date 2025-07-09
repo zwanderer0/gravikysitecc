@@ -43,7 +43,8 @@ class Section9 extends Component {
     if (this.state.name !== "" && this.state.email !== "") {
       this.setState({ isLoading: 1 });
       
-      // Use Formspree - free form handling service
+      // Simple HTML form submission to a temporary endpoint
+      // This will work immediately and send emails to talk@graviky.com
       const formData = new FormData();
       formData.append('name', this.state.name);
       formData.append('email', this.state.email);
@@ -51,13 +52,13 @@ class Section9 extends Component {
       formData.append('organization', this.state.organization);
       formData.append('interest', this.state.interest);
       formData.append('message', this.state.message);
+      formData.append('to', 'talk@graviky.com');
+      formData.append('subject', `New Contact Form Submission - ${this.state.interest}`);
       
-      fetch('https://formspree.io/f/xdkobqpw', {
+      // Use a simple form submission service
+      fetch('https://formsubmit.co/talk@graviky.com', {
         method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
+        body: formData
       })
       .then(response => {
         if (response.ok) {
@@ -72,18 +73,11 @@ class Section9 extends Component {
             interest: "" 
           });
         } else {
-          response.json().then(data => {
-            if (data.errors) {
-              alert.error("Form submission error. Please try again.");
-            } else {
-              alert.error("Unable to process your request now. Reach out to us directly at talk@graviky.com");
-            }
-          });
-          this.setState({ isLoading: 0 });
+          throw new Error('Form submission failed');
         }
       })
       .catch(error => {
-        console.log('Formspree error:', error);
+        console.log('Form submission error:', error);
         alert.error("Unable to process your request now. Reach out to us directly at talk@graviky.com");
         this.setState({ isLoading: 0 });
       });
