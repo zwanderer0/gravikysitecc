@@ -58,7 +58,7 @@ class Section9 extends Component {
       formData.append('timestamp', new Date().toISOString());
       
       // TODO: Replace with your Google Apps Script Web App URL
-      const GOOGLE_SCRIPT_URL = 'PLACEHOLDER_GOOGLE_SCRIPT_URL';
+      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyk8KzQR1bl-zlfpvLn4yH-9Uk97pxWevY9mMvU2h1Pj_o8UkY4fSsan9zhS_q8AEtiSg/exec';
       
       // Send to Google Apps Script
       fetch(GOOGLE_SCRIPT_URL, {
