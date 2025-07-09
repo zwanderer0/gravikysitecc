@@ -1,17 +1,17 @@
 .section2-container {
   width: 100%;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5% 2%;
-  min-height: 600px;
+  padding: 4% 2%;
+  min-height: 700px;
 }
 
 .content-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 0.8fr 1fr 1.2fr;
+  gap: 2rem;
   width: 100%;
   max-width: 1400px;
   align-items: center;
@@ -26,95 +26,96 @@
 
 .center-content {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1rem;
   align-self: center;
 }
 
 .section-label {
   font-family: "JosefinBold";
-  color: #2c2c2c;
-  font-size: 1.2rem;
+  color: #202020;
+  font-size: 1.1rem;
   margin: 0 0 1.5rem 0;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
 }
 
-/* Problem Section Styles (Red theme) */
+/* Problem Section Styles */
 .problem-section {
-  background: #fff;
+  background: #f8f9fa;
   border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border-left: 5px solid #dc3545;
+  padding: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border: 2px solid #e9ecef;
   width: 100%;
 }
 
 .problem-stats {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .problem-stat {
   text-align: center;
-  padding: 1.2rem;
-  background: #ffedef;
-  border-radius: 10px;
-  border: 1px solid #f5c6cb;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
 }
 
 .problem-number {
   font-family: "JosefinBold";
-  color: #dc3545;
-  font-size: 2.2rem;
-  margin: 0 0 0.5rem 0;
+  color: #000;
+  font-size: 1.8rem;
+  margin: 0 0 0.3rem 0;
 }
 
 .problem-desc {
   font-family: "WorkSinRegular";
-  color: #721c24;
-  font-size: 0.95rem;
+  color: #555;
+  font-size: 0.85rem;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
-/* Solution Section Styles (Green theme) */
+/* Solution Section Styles */
 .solution-section {
-  background: #fff;
+  background: #f8f9fa;
   border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border-left: 5px solid #28a745;
+  padding: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border: 2px solid #e9ecef;
   text-align: center;
 }
 
 .solution-text {
   font-family: "WorkSinRegular";
-  color: #155724;
-  font-size: 1.1rem;
+  color: #202020;
+  font-size: 1rem;
   margin: 0;
-  line-height: 1.6;
-  background: #f0f9ff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  border: 1px solid #bee5eb;
+  line-height: 1.5;
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
 }
 
-/* Before/After Slider Styles */
+/* Before/After Slider Styles - Much larger */
 .before-after-slider {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .slider-container {
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 450px;
   overflow: hidden;
   border-radius: 15px;
   margin-bottom: 1rem;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: #fff;
 }
 
 .slide {
@@ -129,6 +130,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .slide.active {
@@ -137,55 +140,56 @@
 
 .slider-image {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
+  height: 380px;
+  object-fit: contain;
   border-radius: 10px;
+  background: #fff;
 }
 
 .slide-label {
   position: absolute;
-  bottom: 15px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(44, 44, 44, 0.9);
+  background: rgba(0, 0, 0, 0.8);
   color: #fff;
-  padding: 8px 20px;
+  padding: 10px 25px;
   border-radius: 20px;
   font-family: "JosefinBold";
-  font-size: 0.9rem;
+  font-size: 1rem;
   letter-spacing: 1px;
 }
 
 .slider-dots {
   display: flex;
   justify-content: center;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 .dot {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background: #ccc;
   cursor: pointer;
   transition: all 0.3s ease;
+  border: 2px solid #000;
 }
 
 .dot.active {
-  background: #28a745;
-  transform: scale(1.2);
+  background: #000;
+  transform: scale(1.1);
 }
 
 .dot:hover {
-  background: #28a745;
-  transform: scale(1.1);
+  background: #000;
 }
 
 /* Tablet styles */
 @media screen and (max-width: 1024px) {
   .content-layout {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
     text-align: center;
   }
 
@@ -197,30 +201,34 @@
 
   .problem-stat {
     flex: 1;
-    min-width: 150px;
-    margin: 0.5rem;
+    min-width: 120px;
+    margin: 0.3rem;
   }
 
   .slider-container {
-    height: 300px;
-    max-width: 350px;
+    height: 400px;
+    max-width: 450px;
     margin: 0 auto 1rem auto;
   }
 
   .slider-image {
-    height: 250px;
+    height: 330px;
   }
 }
 
 /* Mobile styles */
 @media screen and (max-width: 768px) {
   .section2-container {
-    padding: 8% 5%;
+    padding: 6% 3%;
+  }
+
+  .content-layout {
+    gap: 1.5rem;
   }
 
   .problem-section,
   .solution-section {
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
 
   .problem-stats {
@@ -232,44 +240,7 @@
   }
 
   .problem-number {
-    font-size: 1.8rem;
-  }
-
-  .solution-text {
-    font-size: 1rem;
-    padding: 1.2rem;
-  }
-
-  .slider-container {
-    height: 250px;
-    max-width: 300px;
-  }
-
-  .slider-image {
-    height: 200px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .section2-container {
-    padding: 10% 5%;
-  }
-
-  .content-layout {
-    gap: 2rem;
-  }
-
-  .problem-section,
-  .solution-section {
-    padding: 1rem;
-  }
-
-  .problem-number {
     font-size: 1.5rem;
-  }
-
-  .problem-desc {
-    font-size: 0.85rem;
   }
 
   .solution-text {
@@ -278,17 +249,59 @@
   }
 
   .slider-container {
-    height: 220px;
-    max-width: 250px;
+    height: 350px;
+    max-width: 400px;
   }
 
   .slider-image {
-    height: 170px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section2-container {
+    padding: 8% 4%;
+  }
+
+  .content-layout {
+    gap: 1.2rem;
+  }
+
+  .problem-section,
+  .solution-section {
+    padding: 1rem;
+  }
+
+  .problem-number {
+    font-size: 1.3rem;
+  }
+
+  .problem-desc {
+    font-size: 0.8rem;
+  }
+
+  .solution-text {
+    font-size: 0.85rem;
+    padding: 0.8rem;
+  }
+
+  .slider-container {
+    height: 300px;
+    max-width: 350px;
+  }
+
+  .slider-image {
+    height: 230px;
   }
 
   .slide-label {
-    bottom: 10px;
-    padding: 6px 15px;
-    font-size: 0.8rem;
+    bottom: 15px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .dot {
+    width: 14px;
+    height: 14px;
   }
 }
