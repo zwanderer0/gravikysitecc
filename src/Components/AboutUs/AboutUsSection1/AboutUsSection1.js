@@ -28,11 +28,50 @@ export default class AboutUsSection1 extends Component {
           <div className="story-timeline">
             <div className="timeline-item">
               <div className="timeline-content">
-                <h3>2016: The Beginning</h3>
+                <h3>MIT Media Lab Origins</h3>
+                <p>
+                  Graviky began as an MIT Media Lab experiment when we hacked
+                  together a tool to capture soot from a burning candle and used
+                  the closest available solvents - vodka and vegetable oil - to
+                  produce a rough version of what is now AIR–INK<sup>®</sup>.
+                </p>
+              </div>
+              <div className="timeline-image">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fd653fbe13bec4d378750f6416a434d8d?format=webp&width=800"
+                  alt="MIT Media Lab origins"
+                  className="story-image-crop"
+                  style={{ objectPosition: "0% 0%", objectFit: "cover" }}
+                />
+              </div>
+            </div>
+
+            <div className="timeline-item reverse">
+              <div className="timeline-image">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fd653fbe13bec4d378750f6416a434d8d?format=webp&width=800"
+                  alt="Heineken collaboration"
+                  className="story-image-crop"
+                  style={{ objectPosition: "25% 0%", objectFit: "cover" }}
+                />
+              </div>
+              <div className="timeline-content">
+                <h3>2016: Heineken Collaboration</h3>
                 <p>
                   In 2016, with the idea of turning carbon emissions into
                   variety of inks and paints we collaborated with Heineken.
                   AIR-INK<sup>®</sup> was born out of this collaboration.
+                </p>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-content">
+                <h3>Global Art Movement</h3>
+                <p>
+                  Since then, AIR-INK<sup>®</sup> has kickstarted a public art
+                  movement spanning cities as diverse as Hong Kong, London, New
+                  York, Mumbai, Berlin, Singapore, Delhi and many more.
                 </p>
               </div>
               <div className="timeline-image">
