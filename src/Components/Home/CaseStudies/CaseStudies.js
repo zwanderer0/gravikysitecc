@@ -115,16 +115,6 @@ export default class CaseStudies extends Component {
                       responsibility into their core operations.
                     </p>
 
-                    <div className="case-study-stats">
-                      <div className="stat">
-                        <h4>Enterprise</h4>
-                        <p>Scale collaboration</p>
-                      </div>
-                      <div className="stat">
-                        <h4>Academic</h4>
-                        <p>Research partnership</p>
-                      </div>
-                    </div>
                     <a
                       href="https://drive.google.com/file/d/1kK3xgntab6EgcQwUHl6zgr95i5aDYw2o/view"
                       target="_blank"
