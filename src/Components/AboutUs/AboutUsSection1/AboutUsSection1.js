@@ -85,8 +85,8 @@ export default class AboutUsSection1 extends Component {
             <div className="timeline-item reverse">
               <div className="timeline-image">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Faedad2b829c944cea10a4b82ab70d24f?format=webp&width=800"
-                  alt="Global art movement gallery exhibition"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F650b986f0e2f4b5f8f91d3d9ce0e50ab?format=webp&width=800"
+                  alt="Artist creating mural with AIR-INK"
                   className="story-image-crop"
                 />
               </div>
@@ -95,27 +95,11 @@ export default class AboutUsSection1 extends Component {
                 <p>
                   Since then, AIR-INK<sup>®</sup> has kickstarted a public art
                   movement spanning cities as diverse as Hong Kong, London, New
-                  York, Mumbai, Berlin, Singapore, Delhi and many more.
+                  York, Mumbai, Berlin, Singapore, Delhi and many more. Carbon
+                  emissions which could have been in the lungs of millions of
+                  people are now resting as art created by over a thousand
+                  artists like Doodle Man, Christian Furr, Kristoes and Imagine.
                 </p>
-              </div>
-            </div>
-
-            <div className="timeline-item">
-              <div className="timeline-content">
-                <h3>Artists & Impact</h3>
-                <p>
-                  Carbon emissions which could have been in the lungs of
-                  millions of people are now resting as art created by over a
-                  thousand artists like Doodle Man, Christian Furr, Kristoes and
-                  Imagine.
-                </p>
-              </div>
-              <div className="timeline-image">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F650b986f0e2f4b5f8f91d3d9ce0e50ab?format=webp&width=800"
-                  alt="Artist creating mural with AIR-INK"
-                  className="story-image-crop"
-                />
               </div>
             </div>
 
