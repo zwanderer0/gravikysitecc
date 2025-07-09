@@ -69,6 +69,34 @@ export default class AboutUsSection1 extends Component {
             style={{ width: "100%", height: "100%", objectFit: "contain" }}
           />
         </div>
+        <div className="ink-brush-background ink-brush-3">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fe05c741da71c4411b5bd7bf3c54e5094?format=webp&width=800"
+            alt=""
+            style={{ width: "100%", height: "100%", objectFit: "contain" }}
+          />
+        </div>
+        <div className="ink-brush-background ink-brush-4">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F7cdf399c3c524e40a5ff5c25caeb76f8?format=webp&width=800"
+            alt=""
+            style={{ width: "100%", height: "100%", objectFit: "contain" }}
+          />
+        </div>
+        <div className="ink-brush-background ink-brush-5">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fe05c741da71c4411b5bd7bf3c54e5094?format=webp&width=800"
+            alt=""
+            style={{ width: "100%", height: "100%", objectFit: "contain" }}
+          />
+        </div>
+        <div className="ink-brush-background ink-brush-6">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F7cdf399c3c524e40a5ff5c25caeb76f8?format=webp&width=800"
+            alt=""
+            style={{ width: "100%", height: "100%", objectFit: "contain" }}
+          />
+        </div>
         <div className="video-section">
           <ReactPlayer
             url={url}
