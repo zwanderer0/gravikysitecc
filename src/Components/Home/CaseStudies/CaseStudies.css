@@ -474,29 +474,72 @@
 }
 
 @media screen and (max-width: 500px) {
+  .case-studies-container {
+    padding: 2% 0;
+  }
+
   .case-studies-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
   }
 
   .case-studies-subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  .case-studies-tabs {
+    gap: 0.4rem;
+  }
+
+  .tab-button {
+    min-width: 120px;
+    max-width: 140px;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .tab-subtitle {
+    font-size: 0.7rem;
   }
 
   .tab-content {
-    padding: 1.5rem 1rem;
+    padding: 1rem 0.8rem;
   }
 
   .case-study-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
   }
 
   .case-study-content p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
   }
 
   .case-study-link {
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .materials-gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .material-item {
+    max-width: 200px;
+    padding: 0.6rem;
+  }
+
+  .material-item img {
+    height: 80px;
+  }
+
+  .printed-materials h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
   }
 
   /* Lightbox Mobile Styles */
