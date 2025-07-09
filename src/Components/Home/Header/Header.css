@@ -363,16 +363,19 @@
   .main-header-container {
     padding: 0 5%;
     height: 50px;
+    z-index: 100;
   }
 
   .white-header-container {
     padding: 0 5%;
     height: 50px;
+    z-index: 100;
   }
 
   .main-header-container-1 {
     padding: 0 5%;
     height: 50px;
+    z-index: 100;
   }
 
   .logo-text {
