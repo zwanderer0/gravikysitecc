@@ -303,16 +303,7 @@ export default class CaseStudies extends Component {
                         </div>
                       </div>
                     </div>
-                    <div className="case-study-stats">
-                      <div className="stat">
-                        <h4>16</h4>
-                        <p>Countries launch</p>
-                      </div>
-                      <div className="stat">
-                        <h4>12</h4>
-                        <p>Geographies covered</p>
-                      </div>
-                    </div>
+
                     <a
                       href="https://hypebeast.com/2022/10/johnnie-walker-air-ink-collaboration-unboxing"
                       target="_blank"
