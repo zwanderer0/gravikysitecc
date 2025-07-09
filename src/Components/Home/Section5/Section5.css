@@ -74,9 +74,9 @@
     flex-wrap: nowrap;
     height: auto;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
-    gap: 6px;
+    gap: 10px;
   }
 
   .logo-img {
