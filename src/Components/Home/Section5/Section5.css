@@ -131,6 +131,10 @@
     padding: 4%;
   }
 
+  .hypebeast-logo {
+    height: 15px !important;
+  }
+
   .section5-container > h4 {
     font-family: "WorkSinMedium";
     margin: 0;
