@@ -220,7 +220,13 @@ export default class CaseStudies extends Component {
                         <div className="material-item featured">
                           <img
                             src={naomiCampbell}
-                            alt="Naomi Campbell wearing Pangaia x AIR-INK apparel"
+                            alt="Naomi Campbell wearing Pangaia x AIR-INK apparel - Click to enlarge"
+                            onClick={() =>
+                              this.openLightbox(
+                                naomiCampbell,
+                                "Naomi Campbell wearing Pangaia x AIR-INK sustainable fashion collection",
+                              )
+                            }
                           />
                           <p>Naomi Campbell in Pangaia x AIR-INK</p>
                         </div>
