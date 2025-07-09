@@ -11,10 +11,48 @@ import ReactPlayer from "react-player";
 export default class CaseStudies extends Component {
   state = {
     activeTab: "dell",
+    lightboxOpen: false,
+    lightboxImage: null,
+    lightboxAlt: "",
   };
 
   setActiveTab = (tab) => {
     this.setState({ activeTab: tab });
+  };
+
+  openLightbox = (imageSrc, altText) => {
+    this.setState({
+      lightboxOpen: true,
+      lightboxImage: imageSrc,
+      lightboxAlt: altText,
+    });
+    document.body.style.overflow = "hidden"; // Prevent background scrolling
+  };
+
+  closeLightbox = () => {
+    this.setState({
+      lightboxOpen: false,
+      lightboxImage: null,
+      lightboxAlt: "",
+    });
+    document.body.style.overflow = "auto"; // Restore scrolling
+  };
+
+  componentDidMount() {
+    // Add keyboard event listener for ESC key
+    document.addEventListener("keydown", this.handleKeyDown);
+  }
+
+  componentWillUnmount() {
+    // Clean up event listener
+    document.removeEventListener("keydown", this.handleKeyDown);
+    document.body.style.overflow = "auto"; // Ensure scrolling is restored
+  }
+
+  handleKeyDown = (event) => {
+    if (event.key === "Escape" && this.state.lightboxOpen) {
+      this.closeLightbox();
+    }
   };
 
   render() {
