@@ -227,7 +227,13 @@ export default class AboutUsSection1 extends Component {
               }}
               contentArrowStyle={{ borderRight: "7px solid #095CE5" }}
               iconStyle={{ background: "#095CE5", color: "#fff" }}
-              icon={<div style={{ fontSize: "20px" }}>🔬</div>}
+              icon={
+                <div style={{ fontSize: "20px" }}>
+                  <span role="img" aria-label="science">
+                    🔬
+                  </span>
+                </div>
+              }
             >
               <h3 className="vertical-timeline-element-title">
                 Safety & Innovation
