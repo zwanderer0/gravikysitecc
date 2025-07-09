@@ -105,6 +105,10 @@
   .hypebeast-logo {
     height: 21px !important;
   }
+
+  .falling-walls-logo {
+    height: 45px !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
