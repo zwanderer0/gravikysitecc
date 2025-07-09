@@ -91,8 +91,8 @@ export default class Section5 extends Component {
             className="media-link"
           >
             <img
-              className="logo-img"
-              src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F3db609537699485d9a07025d4ec8d5ca?format=webp&width=800"
+              className="logo-img falling-walls-logo"
+              src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F074314d588d447dc920a98407e46642f"
               alt="Falling Walls Foundation"
             />
           </a>
