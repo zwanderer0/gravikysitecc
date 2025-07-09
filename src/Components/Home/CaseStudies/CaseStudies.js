@@ -162,7 +162,13 @@ export default class CaseStudies extends Component {
                         <div className="material-item featured">
                           <img
                             src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fca1817a0309547b2b39c0721066cebaf?format=webp&width=800"
-                            alt="Doconomy Mastercard Credit Card with AIR-INK"
+                            alt="Doconomy Mastercard Credit Card with AIR-INK - Click to view details"
+                            onClick={() =>
+                              this.openLightbox(
+                                "https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fca1817a0309547b2b39c0721066cebaf?format=webp&width=1200",
+                                "Doconomy Mastercard Credit Card with AIR-INK - Bio-sourced material printed with AIR-INK",
+                              )
+                            }
                           />
                           <p>Carbon Limit Credit Cards</p>
                         </div>
