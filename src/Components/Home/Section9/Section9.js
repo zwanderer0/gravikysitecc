@@ -40,44 +40,11 @@ class Section9 extends Component {
   sendMessage = (e, alert) => {
     e.preventDefault();
     
-    // Google Apps Script Web App URL - You'll need to replace this with your actual URL
-    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxBQtLxj7YzuOKEJrTUjZBkQFOVOOyWAoOvjLjYZHdJyLnTg-dXXXXXXXXXXXXXXXXXXXXXXX/exec";
-    
-    const formData = new FormData();
-    formData.append('name', this.state.name);
-    formData.append('email', this.state.email);
-    formData.append('title', this.state.title);
-    formData.append('organization', this.state.organization);
-    formData.append('message', this.state.message);
-    formData.append('interest', this.state.interest);
-    formData.append('timestamp', new Date().toISOString());
-    
     if (this.state.name !== "" && this.state.email !== "") {
       this.setState({ isLoading: 1 });
       
-      // Try Google Sheets first
-      fetch(GOOGLE_SCRIPT_URL, {
-        method: 'POST',
-        body: formData,
-        mode: 'no-cors'
-      })
-      .then(() => {
-        alert.success("Thanks, We will get back to you! ;)");
-        this.setState({ 
-          isLoading: 0, 
-          name: "", 
-          email: "", 
-          message: "", 
-          title: "", 
-          organization: "", 
-          interest: "" 
-        });
-      })
-      .catch(error => {
-        console.log('Google Sheets error:', error);
-        // Fallback to Netlify Forms
-        this.submitToNetlifyForms(alert);
-      });
+      // Use Netlify Forms directly
+      this.submitToNetlifyForms(alert);
     } else {
       alert.show("Name and Email should not be empty");
     }
