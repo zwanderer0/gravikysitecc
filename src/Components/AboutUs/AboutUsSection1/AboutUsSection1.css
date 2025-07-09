@@ -13,6 +13,35 @@
   max-width: 1200px;
 }
 
+/* VerticalTimeline custom styles */
+.vertical-timeline-element-title {
+  font-family: "JosefinBold" !important;
+  color: #095ce5 !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.timeline-image {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 1rem 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.vertical-timeline-element-content p {
+  font-family: "WorkSinRegular" !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+/* Timeline line color customization */
+.vertical-timeline::before {
+  background: linear-gradient(to bottom, #095ce5, #0847b8) !important;
+}
+
 .aboutus-section1-textblock > h1 {
   font-size: 450%;
   font-family: "JosefinBold";
