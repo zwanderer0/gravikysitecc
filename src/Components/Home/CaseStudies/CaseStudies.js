@@ -200,12 +200,12 @@ export default class CaseStudies extends Component {
                       </div>
                     </div>
                     <a
-                      href="https://thepangaia.com/pages/airink"
+                      href="https://www.forbes.com/sites/brookrobertsislam/2021/04/20/pangaias-game-changing-collaboration-draws-carbon-from-air-pollution-to-print-textiles/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="case-study-link"
                     >
-                      Explore Pangaia Collection
+                      Read Forbes Article
                     </a>
                   </div>
                 )}
