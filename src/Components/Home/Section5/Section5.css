@@ -1,5 +1,5 @@
 .section5-container {
-  padding: 2% 7%;
+  padding: 0 7% 1% 7%;
   background: #fcfcfc;
   width: 86%;
   display: flex;
@@ -16,15 +16,16 @@
 
 .logo-containers {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   height: auto;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  gap: 23px;
 }
 
 .logo-img {
-  height: 30px;
+  height: 22px;
   width: auto;
   display: block;
   filter: grayscale(100%);
@@ -50,9 +51,17 @@
   filter: grayscale(0%);
 }
 
+.hypebeast-logo {
+  height: 15px !important;
+}
+
+.falling-walls-logo {
+  height: 55px !important;
+}
+
 @media screen and (max-width: 1024px) {
   .section5-container {
-    padding: 10% 5%;
+    padding: 3% 5%;
     background: #fcfcfc;
     width: 90%;
     display: flex;
@@ -62,20 +71,21 @@
 
   .logo-containers {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: auto;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    gap: 15px;
   }
 
   .logo-img {
-    height: 40px;
+    height: 30px;
     width: auto;
     display: block;
     filter: grayscale(100%);
     transition: 200ms;
-    padding: 5%;
+    padding: 3%;
   }
 
   .section5-container > h4 {
@@ -91,11 +101,19 @@
   .logo-containers {
     justify-content: space-around;
   }
+
+  .hypebeast-logo {
+    height: 21px !important;
+  }
+
+  .falling-walls-logo {
+    height: 45px !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .section5-container {
-    padding: 20% 7%;
+    padding: 8% 7%;
     background: #fcfcfc;
     width: 84%;
     display: flex;
@@ -105,19 +123,28 @@
 
   .logo-containers {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: auto;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
+    gap: 12px;
   }
 
   .logo-img {
-    height: 30px;
+    height: 22px;
     width: auto;
     display: block;
     transition: 200ms;
-    padding: 8%;
+    padding: 4%;
+  }
+
+  .hypebeast-logo {
+    height: 15px !important;
+  }
+
+  .falling-walls-logo {
+    height: 35px !important;
   }
 
   .section5-container > h4 {

@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 75vh;
   justify-content: center;
 }
 
@@ -75,7 +75,7 @@
     flex-direction: column;
     align-items: center;
     background-position: center;
-    height: 100vh;
+    height: 70vh;
   }
 
   .landing-button-container {
@@ -127,7 +127,7 @@
     flex-direction: column;
     align-items: center;
     background-position: center;
-    height: 100vh;
+    height: 70vh;
   }
 
   .landing-page-container > p {
@@ -186,7 +186,7 @@
   .landing-page-container {
     background-size: 400%;
     /* padding: 40% 5% 45% 5%; */
-    height: 100vh;
+    height: 65vh;
     padding: 0 5%;
     width: 90%;
     display: flex;
