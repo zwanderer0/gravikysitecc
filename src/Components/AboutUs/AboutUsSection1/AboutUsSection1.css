@@ -11,7 +11,7 @@
 
 .ink-brush-background {
   position: absolute;
-  opacity: 0.08;
+  opacity: 0.16;
   z-index: 0;
   pointer-events: none;
   transition: transform 0.1s ease-out;
@@ -31,6 +31,38 @@
   width: 250px;
   height: 180px;
   transform: rotate(-25deg);
+}
+
+.ink-brush-3 {
+  top: 35%;
+  left: -6%;
+  width: 180px;
+  height: 140px;
+  transform: rotate(45deg);
+}
+
+.ink-brush-4 {
+  top: 60%;
+  right: -3%;
+  width: 220px;
+  height: 160px;
+  transform: rotate(-35deg);
+}
+
+.ink-brush-5 {
+  bottom: 40%;
+  right: -10%;
+  width: 200px;
+  height: 150px;
+  transform: rotate(55deg);
+}
+
+.ink-brush-6 {
+  top: 80%;
+  left: -5%;
+  width: 160px;
+  height: 120px;
+  transform: rotate(-15deg);
 }
 
 .aboutus-section1-textblock {
@@ -97,6 +129,30 @@
     width: 180px;
     height: 130px;
     left: -12%;
+  }
+
+  .ink-brush-3 {
+    width: 140px;
+    height: 110px;
+    left: -8%;
+  }
+
+  .ink-brush-4 {
+    width: 160px;
+    height: 120px;
+    right: -5%;
+  }
+
+  .ink-brush-5 {
+    width: 150px;
+    height: 110px;
+    right: -12%;
+  }
+
+  .ink-brush-6 {
+    width: 120px;
+    height: 90px;
+    left: -8%;
   }
 
   .aboutus-section1-textblock > h1 {
