@@ -76,18 +76,7 @@ export default class CaseStudies extends Component {
                       enterprise-level companies can integrate environmental
                       responsibility into their core operations.
                     </p>
-                    <div className="printed-materials">
-                      <h4>What We Printed:</h4>
-                      <div className="materials-gallery">
-                        <div className="material-item featured">
-                          <img
-                            src={packageImg}
-                            alt="Dell laptop packaging printed with AIR-INK"
-                          />
-                          <p>Dell Laptop Packaging</p>
-                        </div>
-                      </div>
-                    </div>
+
                     <div className="case-study-stats">
                       <div className="stat">
                         <h4>Enterprise</h4>
