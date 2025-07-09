@@ -152,7 +152,7 @@ export default class CaseStudies extends Component {
                       limit credit card.
                     </p>
                     <div className="printed-materials">
-                      <h4>What We Created:</h4>
+                      <h4>Products:</h4>
                       <div className="materials-gallery">
                         <div className="material-item featured">
                           <img
