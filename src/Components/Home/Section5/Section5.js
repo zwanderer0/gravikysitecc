@@ -79,7 +79,7 @@ export default class Section5 extends Component {
             className="media-link"
           >
             <img
-              className="logo-img"
+              className="logo-img hypebeast-logo"
               src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F3c391b7c18ce46e58b171ad4eaf75cc3?format=webp&width=800"
               alt="Hypebeast article"
             />
