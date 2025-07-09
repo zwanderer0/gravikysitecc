@@ -8,7 +8,7 @@ import CaseStudies from "./CaseStudies/CaseStudies";
 import Section5 from "./Section5/Section5";
 import Section6 from "./Section6/Section6";
 import Section7 from "./Section7/Section7";
-import Section8 from "./Section8/Section8";
+
 import Section9 from "./Section9/Section9";
 import Footer from "./Footer/Footer";
 import { connect } from "react-redux";
