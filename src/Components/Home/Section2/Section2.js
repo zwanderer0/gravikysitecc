@@ -98,9 +98,7 @@ export default class Section2 extends Component {
                       alt="Processed carbon black pigments ready for use"
                       className="slider-image"
                     />
-                    <p className="slide-caption">
-                      Safe, non-virgin pigments ready for use
-                    </p>
+                    <div className="slide-label">AFTER</div>
                   </div>
                 </div>
                 <div className="slider-dots">
