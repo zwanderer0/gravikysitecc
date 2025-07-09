@@ -358,23 +358,56 @@
 }
 
 /* Responsive Design */
-@media screen and (max-width: 1024px) {
-  .case-studies-title {
-    font-size: 3rem;
+@media screen and (max-width: 1200px) {
+  .case-studies-container {
+    padding: 3% 0;
+  }
+
+  .case-studies-layout {
+    gap: 1.5rem;
   }
 
   .case-studies-tabs {
-    gap: 1rem;
-  }
-
-  .tab-button {
-    min-width: 160px;
-    font-size: 1rem;
-    padding: 0.8rem 1.5rem;
+    min-width: 260px;
+    flex: 0 0 260px;
   }
 
   .tab-content {
-    padding: 2.5rem;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .case-studies-title {
+    font-size: 2.8rem;
+  }
+
+  .case-studies-layout {
+    gap: 1.5rem;
+  }
+
+  .case-studies-tabs {
+    gap: 0.8rem;
+    min-width: 240px;
+    flex: 0 0 240px;
+  }
+
+  .tab-button {
+    min-width: 220px;
+    font-size: 0.95rem;
+    padding: 1rem 1.2rem;
+  }
+
+  .tab-content {
+    padding: 1.8rem;
+  }
+
+  .case-study-content h3 {
+    font-size: 1.7rem;
+  }
+
+  .case-study-content p {
+    font-size: 1.05rem;
   }
 }
 
