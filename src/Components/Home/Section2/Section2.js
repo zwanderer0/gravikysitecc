@@ -78,8 +78,7 @@ export default class Section2 extends Component {
 
           <div className="right-content">
             <ScrollAnimation animateIn="fadeInRight">
-              <div className="transformation-slider">
-                <h3 className="section-label">Transformation Process</h3>
+              <div className="before-after-slider">
                 <div className="slider-container">
                   <div
                     className={`slide ${this.state.currentSlide === 0 ? "active" : ""}`}
