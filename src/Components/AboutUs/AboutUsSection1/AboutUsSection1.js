@@ -15,9 +15,44 @@ export default class AboutUsSection1 extends Component {
     innerWidth: window.innerWidth,
   };
 
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleParallax);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleParallax);
+  }
+
+  handleParallax = () => {
+    const scrolled = window.pageYOffset;
+    const parallax1 = document.querySelector(".ink-brush-1");
+    const parallax2 = document.querySelector(".ink-brush-2");
+
+    if (parallax1) {
+      parallax1.style.transform = `rotate(15deg) translateY(${scrolled * 0.1}px)`;
+    }
+    if (parallax2) {
+      parallax2.style.transform = `rotate(-25deg) translateY(${scrolled * -0.05}px)`;
+    }
+  };
+
   render() {
     return (
       <div className="aboutus-section1-container">
+        <div className="ink-brush-background ink-brush-1">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fe05c741da71c4411b5bd7bf3c54e5094?format=webp&width=800"
+            alt=""
+            style={{ width: "100%", height: "100%", objectFit: "contain" }}
+          />
+        </div>
+        <div className="ink-brush-background ink-brush-2">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F7cdf399c3c524e40a5ff5c25caeb76f8?format=webp&width=800"
+            alt=""
+            style={{ width: "100%", height: "100%", objectFit: "contain" }}
+          />
+        </div>
         <div className="video-section">
           <ReactPlayer
             url={url}
