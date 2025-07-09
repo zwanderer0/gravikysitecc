@@ -93,6 +93,13 @@ export default class CaseStudies extends Component {
                   Pangaia
                   <span className="tab-subtitle">T-Shirt Collection</span>
                 </button>
+                <button
+                  className={`tab-button ${activeTab === "diageo" ? "active" : ""}`}
+                  onClick={() => this.setActiveTab("diageo")}
+                >
+                  Diageo
+                  <span className="tab-subtitle">Johnnie Walker Edition</span>
+                </button>
               </div>
 
               <div className="tab-content">
