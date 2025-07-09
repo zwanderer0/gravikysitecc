@@ -160,10 +160,9 @@ export default class AboutUsSection1 extends Component {
             <div className="timeline-item reverse">
               <div className="timeline-image">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fd653fbe13bec4d378750f6416a434d8d?format=webp&width=800"
-                  alt="Industrial applications"
+                  src="https://cdn.builder.io/o/assets%2F2891faa92b574a07a8369948a9a1f207%2Fdb26c67b0850473fa21320f841181d2d?alt=media&token=b098222f-b3de-4ba0-9e40-f26175176059&apiKey=2891faa92b574a07a8369948a9a1f207"
+                  alt="Industrial printing progression with AIR-INK"
                   className="story-image-crop"
-                  style={{ objectPosition: "100% 50%", objectFit: "cover" }}
                 />
               </div>
               <div className="timeline-content">
