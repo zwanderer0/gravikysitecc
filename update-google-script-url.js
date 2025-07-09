@@ -21,8 +21,8 @@ try {
   
   // Replace the placeholder URL
   content = content.replace(
-    'const GOOGLE_SCRIPT_URL = "REPLACE_WITH_YOUR_GOOGLE_APPS_SCRIPT_URL";',
-    `const GOOGLE_SCRIPT_URL = "${newUrl}";`
+    'PLACEHOLDER_GOOGLE_SCRIPT_URL',
+    newUrl
   );
   
   fs.writeFileSync(filePath, content, 'utf8');

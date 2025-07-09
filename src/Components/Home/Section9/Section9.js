@@ -43,7 +43,7 @@ class Section9 extends Component {
     if (this.state.name !== "" && this.state.email !== "") {
       this.setState({ isLoading: 1 });
       
-      // Create form data for FormSubmit.co
+      // Create form data for Google Apps Script
       const formData = new FormData();
       formData.append('name', this.state.name);
       formData.append('email', this.state.email);
@@ -51,30 +51,34 @@ class Section9 extends Component {
       formData.append('organization', this.state.organization);
       formData.append('interest', this.state.interest);
       formData.append('message', this.state.message);
-      formData.append('_subject', `New Contact Form Submission - ${this.state.interest}`);
-      formData.append('_next', 'https://graviky.com/thank-you');
-      formData.append('_captcha', 'false');
       
-      // Use FormSubmit.co - free email service
-      fetch('https://formsubmit.co/talk@graviky.com', {
+      // Add technical info for better tracking
+      formData.append('ipAddress', 'Client IP'); // Will be populated by server
+      formData.append('userAgent', navigator.userAgent);
+      formData.append('timestamp', new Date().toISOString());
+      
+      // TODO: Replace with your Google Apps Script Web App URL
+      const GOOGLE_SCRIPT_URL = 'PLACEHOLDER_GOOGLE_SCRIPT_URL';
+      
+      // Send to Google Apps Script
+      fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
-        body: formData
+        body: formData,
+        mode: 'no-cors' // Required for Google Apps Script
       })
-      .then(response => {
-        if (response.ok || response.status === 200) {
-          alert.success("Thanks, We will get back to you! ;)");
-          this.setState({ 
-            isLoading: 0, 
-            name: "", 
-            email: "", 
-            message: "", 
-            title: "", 
-            organization: "", 
-            interest: "" 
-          });
-        } else {
-          throw new Error('Form submission failed');
-        }
+      .then(() => {
+        // Since we're using no-cors mode, we can't read the response
+        // but if we reach here, the request was sent successfully
+        alert.success("Thanks, We will get back to you! ;)");
+        this.setState({ 
+          isLoading: 0, 
+          name: "", 
+          email: "", 
+          message: "", 
+          title: "", 
+          organization: "", 
+          interest: "" 
+        });
       })
       .catch(error => {
         console.log('Form submission error:', error);
