@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import "./AboutUsSection1.css";
 import ReactPlayer from "react-player";
 import ScrollAnimation from "react-animate-on-scroll";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 var url = "https://www.youtube.com/watch?v=Dig_QFPPPtE";
 export default class AboutUsSection1 extends Component {
   state = {
