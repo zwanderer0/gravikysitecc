@@ -6,6 +6,31 @@ import "./Section2.css";
 export default class Section2 extends Component {
   state = {
     scrolled: true,
+    currentSlide: 0,
+  };
+
+  componentDidMount() {
+    // Auto-advance slider
+    this.sliderInterval = setInterval(() => {
+      this.nextSlide();
+    }, 4000);
+  }
+
+  componentWillUnmount() {
+    if (this.sliderInterval) {
+      clearInterval(this.sliderInterval);
+    }
+  }
+
+  nextSlide = () => {
+    this.setState((prevState) => ({
+      currentSlide:
+        prevState.currentSlide === 1 ? 0 : prevState.currentSlide + 1,
+    }));
+  };
+
+  goToSlide = (slideIndex) => {
+    this.setState({ currentSlide: slideIndex });
   };
 
   render() {
