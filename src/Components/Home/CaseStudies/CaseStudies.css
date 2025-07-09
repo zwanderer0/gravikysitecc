@@ -224,6 +224,17 @@
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 1rem;
+  transition:
+    transform 300ms ease,
+    box-shadow 300ms ease;
+  cursor: pointer;
+}
+
+.material-item img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  position: relative;
 }
 
 .material-item p {
