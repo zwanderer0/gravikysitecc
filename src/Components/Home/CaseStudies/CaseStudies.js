@@ -2,9 +2,7 @@ import React, { Component } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import "./CaseStudies.css";
 import dellCS from "../../../assets/dellCS.png";
-import packageImg from "../../../assets/package.png";
 import shirtImg from "../../../assets/shirt.png";
-import markerImg from "../../../assets/markerImage.jpg";
 import naomiCampbell from "../../../assets/naomicampbell.jpeg";
 import ReactPlayer from "react-player";
 
