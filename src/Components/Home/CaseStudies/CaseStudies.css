@@ -1,7 +1,7 @@
 .case-studies-container {
   width: 100%;
   background: #ffffff;
-  padding: 8% 0;
+  padding: 4% 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,7 @@
 
 .case-studies-layout {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
@@ -41,9 +41,9 @@
 .case-studies-tabs {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  min-width: 300px;
-  flex: 0 0 300px;
+  gap: 0.8rem;
+  min-width: 280px;
+  flex: 0 0 280px;
 }
 
 .tab-button {
@@ -51,12 +51,12 @@
   border: 2px solid #095ce5;
   color: #095ce5;
   font-family: "JosefinBold";
-  font-size: 1.1rem;
-  padding: 1.5rem 2rem;
-  border-radius: 20px;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
   cursor: pointer;
   transition: all 300ms ease;
-  min-width: 280px;
+  min-width: 260px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -85,25 +85,25 @@
 
 .tab-content {
   background: #f8f9fa;
-  border-radius: 20px;
-  padding: 3rem;
+  border-radius: 15px;
+  padding: 2rem;
   flex: 1;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .case-study-content h3 {
   font-family: "JosefinBold";
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: #202020;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .case-study-content p {
   font-family: "WorkSinRegular";
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #555;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
 }
 
 .case-study-stats {
@@ -158,7 +158,7 @@
 
 /* Visual Assets Styling */
 .case-study-visual {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 
@@ -178,23 +178,23 @@
 
 /* Printed Materials Gallery */
 .printed-materials {
-  margin: 2.5rem 0;
+  margin: 1.5rem 0;
   text-align: center;
 }
 
 .printed-materials h4 {
   font-family: "JosefinBold";
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #095ce5;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .materials-gallery {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .material-item {
@@ -220,10 +220,10 @@
 
 .material-item img {
   width: 100%;
-  height: 150px;
+  height: 120px;
   object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   transition:
     transform 300ms ease,
     box-shadow 300ms ease;
