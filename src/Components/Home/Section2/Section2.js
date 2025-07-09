@@ -107,7 +107,9 @@ export default class Section2 extends Component {
               <div className="transformation-slider">
                 <h3 className="section-label">Transformation Process</h3>
                 <div className="slider-container">
-                  <div className="slide active">
+                  <div
+                    className={`slide ${this.state.currentSlide === 0 ? "active" : ""}`}
+                  >
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fd98dba7543f447d6a176ed1d02f49cd5?format=webp&width=800"
                       alt="Raw PM2.5 carbon samples from emission sources"
@@ -117,7 +119,9 @@ export default class Section2 extends Component {
                       Raw PM2.5 emissions captured
                     </p>
                   </div>
-                  <div className="slide">
+                  <div
+                    className={`slide ${this.state.currentSlide === 1 ? "active" : ""}`}
+                  >
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Ff8c7a715eb974075976f3d389c831f09?format=webp&width=800"
                       alt="Processed carbon black pigments ready for use"
@@ -129,8 +133,14 @@ export default class Section2 extends Component {
                   </div>
                 </div>
                 <div className="slider-dots">
-                  <span className="dot active" data-slide="0"></span>
-                  <span className="dot" data-slide="1"></span>
+                  <span
+                    className={`dot ${this.state.currentSlide === 0 ? "active" : ""}`}
+                    onClick={() => this.goToSlide(0)}
+                  ></span>
+                  <span
+                    className={`dot ${this.state.currentSlide === 1 ? "active" : ""}`}
+                    onClick={() => this.goToSlide(1)}
+                  ></span>
                 </div>
               </div>
             </ScrollAnimation>
