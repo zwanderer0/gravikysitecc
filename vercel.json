@@ -17,10 +17,5 @@
   "github": {
     "autoAlias": true,
     "enabled": true
-  },
-  "functions": {
-    "app/api/**/*.js": {
-      "runtime": "nodejs18.x"
-    }
   }
 }
