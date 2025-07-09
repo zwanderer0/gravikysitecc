@@ -9,11 +9,11 @@
 
 .section2-content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  gap: 3rem;
   width: 100%;
   max-width: 1200px;
-  align-items: start;
+  align-items: center;
 }
 
 /* Problem Column */
