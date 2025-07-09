@@ -150,10 +150,9 @@ export default class AboutUsSection1 extends Component {
               </div>
               <div className="timeline-image">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fd653fbe13bec4d378750f6416a434d8d?format=webp&width=800"
-                  alt="Lab testing and certification"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2Fb920b3e69fd6467d858bd2c279b8e135?format=webp&width=800"
+                  alt="Lab worker with carbon tank equipment"
                   className="story-image-crop"
-                  style={{ objectPosition: "50% 50%", objectFit: "cover" }}
                 />
               </div>
             </div>
