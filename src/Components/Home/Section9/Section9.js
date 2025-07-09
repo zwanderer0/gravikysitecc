@@ -43,8 +43,7 @@ class Section9 extends Component {
     if (this.state.name !== "" && this.state.email !== "") {
       this.setState({ isLoading: 1 });
       
-      // Simple HTML form submission to a temporary endpoint
-      // This will work immediately and send emails to talk@graviky.com
+      // Create form data for FormSubmit.co
       const formData = new FormData();
       formData.append('name', this.state.name);
       formData.append('email', this.state.email);
@@ -52,16 +51,17 @@ class Section9 extends Component {
       formData.append('organization', this.state.organization);
       formData.append('interest', this.state.interest);
       formData.append('message', this.state.message);
-      formData.append('to', 'talk@graviky.com');
-      formData.append('subject', `New Contact Form Submission - ${this.state.interest}`);
+      formData.append('_subject', `New Contact Form Submission - ${this.state.interest}`);
+      formData.append('_next', 'https://graviky.com/thank-you');
+      formData.append('_captcha', 'false');
       
-      // Use a simple form submission service
+      // Use FormSubmit.co - free email service
       fetch('https://formsubmit.co/talk@graviky.com', {
         method: 'POST',
         body: formData
       })
       .then(response => {
-        if (response.ok) {
+        if (response.ok || response.status === 200) {
           alert.success("Thanks, We will get back to you! ;)");
           this.setState({ 
             isLoading: 0, 
