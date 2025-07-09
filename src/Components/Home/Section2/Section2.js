@@ -39,32 +39,26 @@ export default class Section2 extends Component {
         <div className="content-layout">
           <div className="left-content">
             <ScrollAnimation animateIn="fadeInLeft">
-              <div className="impact-section">
-                <h3 className="section-label">The Conventional Problem</h3>
-                <div className="impact-stats">
-                  <div className="impact-stat">
-                    <h4 className="impact-number">18M tons</h4>
-                    <p className="impact-desc">
-                      of carbon black produced annually by burning fossil fuels
+              <div className="problem-section">
+                <h3 className="section-label">The problem</h3>
+                <div className="problem-stats">
+                  <div className="problem-stat">
+                    <h4 className="problem-number">18 M t</h4>
+                    <p className="problem-desc">
+                      carbon black made each year by burning fossil fuels
                     </p>
                   </div>
-                  <div className="impact-stat">
-                    <h4 className="impact-number">95%</h4>
-                    <p className="impact-desc">
-                      of commercial carbon black comes from virgin fossil fuel
-                      combustion
-                    </p>
+                  <div className="problem-stat">
+                    <h4 className="problem-number">95 %</h4>
+                    <p className="problem-desc">from virgin sources</p>
                   </div>
-                  <div className="impact-stat">
-                    <h4 className="impact-number">2.5 tons CO₂</h4>
-                    <p className="impact-desc">
-                      emitted per ton of conventional carbon black
+                  <div className="problem-stat">
+                    <h4 className="problem-number">2.5 t CO₂</h4>
+                    <p className="problem-desc">
+                      released for every ton produced
                     </p>
                   </div>
                 </div>
-                <p className="citation">
-                  Source: International Carbon Black Association, 2023
-                </p>
               </div>
             </ScrollAnimation>
           </div>
