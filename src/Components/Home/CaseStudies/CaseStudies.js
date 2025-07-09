@@ -251,6 +251,26 @@ export default class CaseStudies extends Component {
             </div>
           </div>
         </ScrollAnimation>
+
+        {/* Lightbox Modal */}
+        {this.state.lightboxOpen && (
+          <div className="lightbox-overlay" onClick={this.closeLightbox}>
+            <div
+              className="lightbox-content"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button className="lightbox-close" onClick={this.closeLightbox}>
+                &times;
+              </button>
+              <img
+                src={this.state.lightboxImage}
+                alt={this.state.lightboxAlt}
+                className="lightbox-image"
+              />
+              <p className="lightbox-caption">{this.state.lightboxAlt}</p>
+            </div>
+          </div>
+        )}
       </div>
     );
   }
