@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Header from "./Header/Header";
 import LandingPage from "./LandingPage/LandingPage";
 import Section2 from "./Section2/Section2";
-import Section4New from "./Section4-New/Section4-New";
+
 import Section4 from "./Section4/Section4";
 import CaseStudies from "./CaseStudies/CaseStudies";
 import Section5 from "./Section5/Section5";
