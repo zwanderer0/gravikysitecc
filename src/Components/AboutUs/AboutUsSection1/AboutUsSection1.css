@@ -94,20 +94,7 @@
     font-size: 100%;
   }
 
-  .timeline-item {
-    margin-bottom: 3rem;
-    gap: 1.5rem;
-  }
-
-  .timeline-content h3 {
-    font-size: 1.5rem;
-  }
-
-  .timeline-content p {
-    font-size: 1rem;
-  }
-
   .timeline-image {
-    height: 180px;
+    height: 150px;
   }
 }
