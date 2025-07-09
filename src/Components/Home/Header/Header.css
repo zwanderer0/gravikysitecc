@@ -273,6 +273,7 @@
     height: auto;
     background: #202020;
     height: 70px;
+    z-index: 100;
   }
 
   .white-header-container {
@@ -287,6 +288,7 @@
     height: auto;
     background: transparent;
     height: 70px;
+    z-index: 100;
   }
 
   .main-header-container-1 {
@@ -302,6 +304,7 @@
     background: #202020;
     box-shadow: none;
     height: 70px;
+    z-index: 100;
   }
 
   .logo-text {
