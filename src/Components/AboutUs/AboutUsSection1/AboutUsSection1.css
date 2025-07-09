@@ -80,24 +80,37 @@
 
 @media screen and (max-width: 900px) {
   .aboutus-section1-container {
-    flex-direction: column-reverse;
     padding: 15% 7%;
   }
 
   .aboutus-section1-textblock > h1 {
     font-size: 400%;
+    text-align: center;
   }
 
   .aboutus-section1-textblock > p {
     font-size: 150%;
   }
 
-  .aboutus-section1-textblock {
-    width: 100%;
-    color: #202020;
-    padding-bottom: 13%;
+  .timeline-item,
+  .timeline-item.reverse {
+    flex-direction: column;
     text-align: center;
-    padding-bottom: 5%;
+    gap: 2rem;
+  }
+
+  .timeline-image {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .timeline-content {
+    max-width: none;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.8rem;
   }
 }
 
