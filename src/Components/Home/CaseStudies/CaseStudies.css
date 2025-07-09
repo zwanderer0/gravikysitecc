@@ -380,25 +380,26 @@
 
 @media screen and (max-width: 768px) {
   .case-studies-container {
-    padding: 6% 0;
+    padding: 3% 0;
   }
 
   .case-studies-content {
-    width: 90%;
+    width: 95%;
   }
 
   .case-studies-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
   }
 
   .case-studies-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
   }
 
   .case-studies-layout {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .case-studies-tabs {
@@ -407,46 +408,68 @@
     flex-wrap: wrap;
     min-width: auto;
     flex: none;
+    gap: 0.5rem;
   }
 
   .tab-button {
     width: auto;
-    min-width: 200px;
-    max-width: 300px;
+    min-width: 140px;
+    max-width: 180px;
     text-align: center;
     align-items: center;
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .tab-subtitle {
+    font-size: 0.75rem;
   }
 
   .tab-content {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
   }
 
   .case-study-content h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
   }
 
   .case-study-content p {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
 
   .case-study-stats {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .stat h4 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .materials-gallery {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
   }
 
   .material-item {
-    max-width: 300px;
+    max-width: 150px;
     width: 100%;
+    padding: 0.8rem;
+  }
+
+  .material-item img {
+    height: 100px;
+  }
+
+  .case-study-visual {
+    margin-bottom: 1rem;
+  }
+
+  .printed-materials {
+    margin: 1rem 0;
   }
 }
 
