@@ -29,8 +29,9 @@ export default class AboutUsSection1 extends Component {
           animateIn="fadeIn"
           className="aboutus-section1-textblock"
         >
-          <h1>Our Story</h1>
-          <div className="story-timeline">
+                    <h1>Our Story</h1>
+
+          <VerticalTimeline>
             <div className="timeline-item">
               <div className="timeline-content">
                 <h3>MIT Media Lab Origins</h3>
