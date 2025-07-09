@@ -270,7 +270,7 @@ export default class CaseStudies extends Component {
                       partners to introduce AIR-INK based offsetting into their
                       supply chain, and launch across 12 geographies. Diageo
                       produced the Johnnie Walker AIR-INK edition, now on sale
-                      in 16 countries worldwide.
+                      in 12 countries worldwide.
                     </p>
                     <div className="printed-materials">
                       <h4>What We Created:</h4>
