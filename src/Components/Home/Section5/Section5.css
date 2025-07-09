@@ -115,12 +115,12 @@
 
   .logo-containers {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: auto;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    gap: 5px;
+    gap: 3px;
   }
 
   .logo-img {
