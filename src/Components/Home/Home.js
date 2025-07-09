@@ -24,10 +24,10 @@ class Home extends Component {
       <div>
         <Header />
         <LandingPage />
+        <Section5 />
         <Section2 />
         <Section4 />
         <CaseStudies />
-        <Section5 />
         <Section6 />
         <Section7 />
         <Section9 />
