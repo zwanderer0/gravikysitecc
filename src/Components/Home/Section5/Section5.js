@@ -33,16 +33,12 @@ export default class Section5 extends Component {
             <img className="logo-img" src={Ted} alt="TED Talk" />
           </a>
           <a
-            href="https://www.technologyreview.com/2017/08/16/149478/startup-turns-air-pollution-into-ink/"
+            href="https://www.media.mit.edu/posts/airink-wins/"
             target="_blank"
             rel="noopener noreferrer"
             className="media-link"
           >
-            <img
-              className="logo-img"
-              src={Mit}
-              alt="MIT Technology Review article"
-            />
+            <img className="logo-img" src={Mit} alt="MIT SOLVE article" />
           </a>
           <a
             href="https://www.smithsonianmag.com/innovation/startup-captures-air-pollution-turns-it-ink-180967949/"
@@ -63,6 +59,42 @@ export default class Section5 extends Component {
             className="media-link"
           >
             <img className="logo-img" src={Guard} alt="The Guardian article" />
+          </a>
+          <a
+            href="https://www.forbes.com/sites/brookerobertsislam/2021/04/20/pangaias-game-changing-collaboration-draws-carbon-from-air-pollution-to-print-textiles/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="media-link"
+          >
+            <img
+              className="logo-img"
+              src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F8f198d5d490f4f378d0a13e5963620f5?format=webp&width=800"
+              alt="Forbes article"
+            />
+          </a>
+          <a
+            href="https://hypebeast.com/2022/10/johnnie-walker-air-ink-collaboration-unboxing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="media-link"
+          >
+            <img
+              className="logo-img"
+              src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F3c391b7c18ce46e58b171ad4eaf75cc3?format=webp&width=800"
+              alt="Hypebeast article"
+            />
+          </a>
+          <a
+            href="https://falling-walls.com/foundation/people/graviky-labs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="media-link"
+          >
+            <img
+              className="logo-img"
+              src="https://cdn.builder.io/api/v1/image/assets%2F2891faa92b574a07a8369948a9a1f207%2F3db609537699485d9a07025d4ec8d5ca?format=webp&width=800"
+              alt="Falling Walls Foundation"
+            />
           </a>
         </ScrollAnimation>
       </div>
