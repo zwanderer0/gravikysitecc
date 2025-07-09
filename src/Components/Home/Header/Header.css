@@ -184,6 +184,7 @@
     transition: 300ms;
     background: #fff;
     height: 70px;
+    z-index: 100;
   }
 
   .main-header-container-1 {
@@ -197,10 +198,12 @@
     transition: 300ms;
     height: 70px;
     background: #fff;
+    z-index: 100;
   }
 
   .white-header-container {
     height: 70px;
+    z-index: 100;
   }
 
   .my-links {
