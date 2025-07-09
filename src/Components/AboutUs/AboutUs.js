@@ -18,11 +18,9 @@ class AboutUs extends Component {
     return (
       <div>
         <Header />
-        <AboutUsHero />
         <AboutUsSection1 />
         <AboutUsSection2 />
         <AboutUsSection3 />
-        <AboutUsSection4 />
         <Section9 />
         <Footer />
       </div>
