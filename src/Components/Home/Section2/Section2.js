@@ -65,33 +65,13 @@ export default class Section2 extends Component {
 
           <div className="center-content">
             <ScrollAnimation animateIn="fadeIn">
-              <div className="main-message">
-                <h2 className="headline-text">
-                  Instead of letting them enter the environment, we capture,
-                  classify and transform them into useful, safe non-virgin
-                  pigments
-                </h2>
-                <p className="subtext">
-                  While conventional carbon black is made by burning more fossil
-                  fuels, we intercept existing emissions to create the same
-                  high-quality pigments without additional environmental impact.
+              <div className="solution-section">
+                <h3 className="section-label">Our answer</h3>
+                <p className="solution-text">
+                  We capture exhaust particles, refine them, and supply
+                  high-grade recycled pigment — no new fossil input, same
+                  performance.
                 </p>
-                <div className="process-highlight">
-                  <div className="process-step">
-                    <span className="step-number">1</span>
-                    <span className="step-text">Capture</span>
-                  </div>
-                  <div className="process-arrow">→</div>
-                  <div className="process-step">
-                    <span className="step-number">2</span>
-                    <span className="step-text">Classify</span>
-                  </div>
-                  <div className="process-arrow">→</div>
-                  <div className="process-step">
-                    <span className="step-number">3</span>
-                    <span className="step-text">Transform</span>
-                  </div>
-                </div>
               </div>
             </ScrollAnimation>
           </div>
