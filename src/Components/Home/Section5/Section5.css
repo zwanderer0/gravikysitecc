@@ -97,6 +97,10 @@
   .logo-containers {
     justify-content: space-around;
   }
+
+  .hypebeast-logo {
+    height: 21px !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
