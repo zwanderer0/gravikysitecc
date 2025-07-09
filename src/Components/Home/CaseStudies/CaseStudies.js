@@ -233,7 +233,13 @@ export default class CaseStudies extends Component {
                         <div className="material-item">
                           <img
                             src={shirtImg}
-                            alt="Sustainable fashion with AIR-INK"
+                            alt="Sustainable fashion with AIR-INK - Click to enlarge"
+                            onClick={() =>
+                              this.openLightbox(
+                                shirtImg,
+                                "Pangaia sustainable fashion collection printed with AIR-INK technology",
+                              )
+                            }
                           />
                           <p>Sustainable Fashion Collection</p>
                         </div>
