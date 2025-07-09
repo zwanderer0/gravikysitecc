@@ -1,307 +1,234 @@
 .section2-container {
-  width: 100%;
+  width: 86%;
+  padding: 7% 7%;
   background: #fff;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 4% 2%;
-  min-height: 700px;
 }
 
-.content-layout {
+.section2-content {
   display: grid;
-  grid-template-columns: 0.8fr 1fr 1.2fr;
-  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
   width: 100%;
-  max-width: 1400px;
-  align-items: center;
+  max-width: 1200px;
+  align-items: start;
 }
 
-.left-content,
-.right-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.center-content {
+/* Problem Column */
+.problem-column {
   text-align: center;
-  padding: 1rem;
-  align-self: center;
 }
 
-.section-label {
-  font-family: "JosefinBold";
+.problem-column h4 {
+  font-family: "WorkSinMedium";
+  font-size: 14px;
   color: #202020;
-  font-size: 1.1rem;
-  margin: 0 0 1.5rem 0;
-  text-transform: uppercase;
   letter-spacing: 1px;
+  margin: 0 0 2rem 0;
+  text-transform: uppercase;
+}
+
+.stat-block {
+  margin-bottom: 2rem;
+}
+
+.stat-block h2 {
+  font-family: "JosefinBold";
+  font-size: 48px;
+  color: #202020;
+  margin: 0 0 0.5rem 0;
+  line-height: 1;
+}
+
+.stat-block p {
+  font-family: "WorkSinRegular";
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  line-height: 1.4;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Answer Column */
+.answer-column {
   text-align: center;
+  padding: 0 1rem;
 }
 
-/* Problem Section Styles */
-.problem-section {
-  background: #f8f9fa;
-  border-radius: 15px;
-  padding: 1.5rem;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-  border: 2px solid #e9ecef;
-  width: 100%;
+.answer-column h4 {
+  font-family: "WorkSinMedium";
+  font-size: 14px;
+  color: #202020;
+  letter-spacing: 1px;
+  margin: 0 0 2rem 0;
+  text-transform: uppercase;
 }
 
-.problem-stats {
+.answer-column p {
+  font-family: "WorkSinRegular";
+  font-size: 16px;
+  color: #202020;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Image Column */
+.image-column {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  align-items: center;
 }
 
-.problem-stat {
-  text-align: center;
-  padding: 1rem;
-  background: #fff;
-  border-radius: 8px;
-  border: 1px solid #dee2e6;
-}
-
-.problem-number {
-  font-family: "JosefinBold";
-  color: #000;
-  font-size: 1.8rem;
-  margin: 0 0 0.3rem 0;
-}
-
-.problem-desc {
-  font-family: "WorkSinRegular";
-  color: #555;
-  font-size: 0.85rem;
-  margin: 0;
-  line-height: 1.3;
-}
-
-/* Solution Section Styles */
-.solution-section {
-  background: #f8f9fa;
-  border-radius: 15px;
-  padding: 1.5rem;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-  border: 2px solid #e9ecef;
-  text-align: center;
-}
-
-.solution-text {
-  font-family: "WorkSinRegular";
-  color: #202020;
-  font-size: 1rem;
-  margin: 0;
-  line-height: 1.5;
-  background: #fff;
-  padding: 1.2rem;
-  border-radius: 8px;
-  border: 1px solid #dee2e6;
-}
-
-/* Before/After Slider Styles - Much larger */
-.before-after-slider {
-  width: 100%;
-  max-width: 500px;
-}
-
-.slider-container {
+.image-wrapper {
   position: relative;
   width: 100%;
-  height: 450px;
-  overflow: hidden;
-  border-radius: 15px;
+  max-width: 350px;
   margin-bottom: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  background: #fff;
 }
 
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
+.main-image {
   width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.6s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
 }
 
-.slide.active {
-  opacity: 1;
-}
-
-.slider-image {
-  width: 100%;
-  height: 380px;
-  object-fit: contain;
-  border-radius: 10px;
-  background: #fff;
-}
-
-.slide-label {
+.image-label {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 15px;
+  right: 15px;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
-  padding: 10px 25px;
-  border-radius: 20px;
-  font-family: "JosefinBold";
-  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: "WorkSinMedium";
+  font-size: 12px;
   letter-spacing: 1px;
 }
 
-.slider-dots {
+.image-dots {
   display: flex;
+  gap: 12px;
   justify-content: center;
-  gap: 1rem;
 }
 
 .dot {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: #ccc;
   cursor: pointer;
-  transition: all 0.3s ease;
-  border: 2px solid #000;
+  transition: background 0.3s ease;
 }
 
 .dot.active {
-  background: #000;
-  transform: scale(1.1);
+  background: #202020;
 }
 
 .dot:hover {
-  background: #000;
+  background: #202020;
 }
 
 /* Tablet styles */
 @media screen and (max-width: 1024px) {
-  .content-layout {
+  .section2-container {
+    padding: 10% 5%;
+    width: 90%;
+  }
+
+  .section2-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3rem;
     text-align: center;
   }
 
-  .problem-stats {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  .stat-block h2 {
+    font-size: 42px;
   }
 
-  .problem-stat {
-    flex: 1;
-    min-width: 120px;
-    margin: 0.3rem;
+  .answer-column {
+    padding: 0;
   }
 
-  .slider-container {
-    height: 400px;
-    max-width: 450px;
-    margin: 0 auto 1rem auto;
-  }
-
-  .slider-image {
-    height: 330px;
+  .main-image {
+    height: 250px;
   }
 }
 
 /* Mobile styles */
 @media screen and (max-width: 768px) {
   .section2-container {
-    padding: 6% 3%;
+    padding: 15% 5%;
+    width: 90%;
   }
 
-  .content-layout {
-    gap: 1.5rem;
+  .section2-content {
+    gap: 2.5rem;
   }
 
-  .problem-section,
-  .solution-section {
-    padding: 1.2rem;
+  .stat-block h2 {
+    font-size: 36px;
   }
 
-  .problem-stats {
-    flex-direction: column;
+  .stat-block p {
+    font-size: 13px;
   }
 
-  .problem-stat {
-    margin: 0;
+  .answer-column p {
+    font-size: 15px;
   }
 
-  .problem-number {
-    font-size: 1.5rem;
-  }
-
-  .solution-text {
-    font-size: 0.9rem;
-    padding: 1rem;
-  }
-
-  .slider-container {
-    height: 350px;
-    max-width: 400px;
-  }
-
-  .slider-image {
-    height: 280px;
+  .main-image {
+    height: 220px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .section2-container {
-    padding: 8% 4%;
+    padding: 20% 5%;
+    width: 90%;
   }
 
-  .content-layout {
-    gap: 1.2rem;
+  .section2-content {
+    gap: 2rem;
   }
 
-  .problem-section,
-  .solution-section {
-    padding: 1rem;
+  .stat-block {
+    margin-bottom: 1.5rem;
   }
 
-  .problem-number {
-    font-size: 1.3rem;
+  .stat-block h2 {
+    font-size: 28px;
   }
 
-  .problem-desc {
-    font-size: 0.8rem;
+  .stat-block p {
+    font-size: 12px;
+    max-width: 180px;
   }
 
-  .solution-text {
-    font-size: 0.85rem;
-    padding: 0.8rem;
+  .answer-column h4,
+  .problem-column h4 {
+    font-size: 12px;
+    margin-bottom: 1.5rem;
   }
 
-  .slider-container {
-    height: 300px;
-    max-width: 350px;
+  .answer-column p {
+    font-size: 14px;
   }
 
-  .slider-image {
-    height: 230px;
+  .main-image {
+    height: 200px;
   }
 
-  .slide-label {
-    bottom: 15px;
-    padding: 8px 20px;
-    font-size: 0.9rem;
-  }
-
-  .dot {
-    width: 14px;
-    height: 14px;
+  .image-label {
+    bottom: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    font-size: 11px;
   }
 }
