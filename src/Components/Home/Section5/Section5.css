@@ -55,6 +55,10 @@
   height: 15px !important;
 }
 
+.falling-walls-logo {
+  height: 55px !important;
+}
+
 @media screen and (max-width: 1024px) {
   .section5-container {
     padding: 3% 5%;
