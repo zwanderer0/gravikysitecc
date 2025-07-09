@@ -229,16 +229,7 @@ export default class CaseStudies extends Component {
                         </div>
                       </div>
                     </div>
-                    <div className="case-study-stats">
-                      <div className="stat">
-                        <h4>Celebrity</h4>
-                        <p>Endorsements achieved</p>
-                      </div>
-                      <div className="stat">
-                        <h4>100%</h4>
-                        <p>Recycled carbon used</p>
-                      </div>
-                    </div>
+
                     <a
                       href="https://www.forbes.com/sites/brookrobertsislam/2021/04/20/pangaias-game-changing-collaboration-draws-carbon-from-air-pollution-to-print-textiles/"
                       target="_blank"
