@@ -1,135 +1,259 @@
 .section2-container {
-    width: 90%;
-    background-image: url('../../../assets/section2.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10% 5%;
-    height: 100%;
+  width: 86%;
+  padding: 5% 7% 3% 7%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.light-text {
-    font-family: 'WorkSinLight';
-    color: #fff;
-    padding: 0% 7%;
-    font-size: 150%;
-    margin: 0;
-    transition: 200ms;
+.section2-content {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 1.8fr;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
 }
 
-.transparent {
-    color: transparent;
+/* Problem Column */
+.problem-column {
+  text-align: center;
 }
 
-.medium-text {
-    font-family: 'WorkSinRegular';
-    color: #fff;
-    padding: 0% 10%;
-    font-size: 150%;
-    margin: 0;
-    margin-top: 3%;
-    transition: 700ms;
+.problem-column h4 {
+  font-family: "WorkSinMedium";
+  font-size: 14px;
+  color: #202020;
+  letter-spacing: 1px;
+  margin: 0 0 2rem 0;
+  text-transform: uppercase;
 }
 
-.transparent {
-    color: transparent;
+.stat-block {
+  margin-bottom: 2rem;
 }
 
-.learn-more-button {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: #095CE5;
-    border-radius: 30px;
-    width: 18%;
-    height: 57px;
-    font-size: 120%;
-    margin-top: 5%;
+.stat-block h2 {
+  font-family: "JosefinBold";
+  font-size: 48px;
+  color: #202020;
+  margin: 0 0 0.5rem 0;
+  line-height: 1;
 }
 
-.learn-more-button > a {
-    text-decoration: none;
-    color: #fff;
-    font-family: 'WorkSinRegular';
+.stat-block p {
+  font-family: "WorkSinRegular";
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  line-height: 1.4;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* Answer Column */
+.answer-column {
+  text-align: center;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.answer-column h4 {
+  font-family: "WorkSinMedium";
+  font-size: 14px;
+  color: #202020;
+  letter-spacing: 1px;
+  margin: 0 0 2rem 0;
+  text-transform: uppercase;
+}
+
+.answer-column p {
+  font-family: "WorkSinRegular";
+  font-size: 16px;
+  color: #202020;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Image Column */
+.image-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 1rem;
+}
+
+.main-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.image-label {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: "WorkSinMedium";
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.image-dots {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background: #202020;
+}
+
+.dot:hover {
+  background: #202020;
+}
+
+/* Tablet styles */
 @media screen and (max-width: 1024px) {
-    .transparent {
-        color: #fff;
-    }
+  .section2-container {
+    padding: 8% 5% 4% 5%;
+    width: 90%;
+  }
 
-    .learn-more-button {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        background: #095CE5;
-        border-radius: 30px;
-        width: 25%;
-        height: 57px;
-        font-size: 150%;
-        margin-top: 5%;
-    }
+  .section2-content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .stat-block h2 {
+    font-size: 42px;
+  }
+
+  .answer-column {
+    padding: 0;
+    order: 2;
+  }
+
+  .problem-column {
+    order: 1;
+  }
+
+  .image-column {
+    order: 3;
+  }
+
+  .main-image {
+    height: 300px;
+  }
+
+  .image-wrapper {
+    max-width: 400px;
+  }
 }
 
-@media screen and (max-width: 900px) {
-    .section2-container {
-        width: 90%;
-        background-image: url('../../../assets/section2.jpg');
-        background-repeat: no-repeat;
-        background-size: 200%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: space-around;
-        align-items: center;
-        padding: 10% 5%;
-        height: 100%;
-        background-position: center;
-    }
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .section2-container {
+    padding: 10% 5% 5% 5%;
+    width: 90%;
+  }
 
-    .learn-more-button {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        background: #095CE5;
-        border-radius: 30px;
-        width: 50%;
-        height: 57px;
-        font-size: 150%;
-        margin-top: 5%;
-    }
-    
-    .light-text {
-        padding: 0% 0%;
-    }
+  .section2-content {
+    gap: 2rem;
+  }
 
-    .medium-text {
-        padding: 0% 0%;
-    }
+  .stat-block h2 {
+    font-size: 36px;
+  }
+
+  .stat-block p {
+    font-size: 13px;
+  }
+
+  .answer-column p {
+    font-size: 15px;
+  }
+
+  .main-image {
+    height: 280px;
+  }
+
+  .image-wrapper {
+    max-width: 350px;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .section2-container {
-        background-size: 500%;
-        padding: 20% 5%;
-    }
+  .section2-container {
+    padding: 15% 5% 8% 5%;
+    width: 90%;
+  }
 
-    .light-text {
-        padding: 5% 0%;
-        font-size: 100%;
-    }
+  .section2-content {
+    gap: 1.5rem;
+  }
 
-    .medium-text {
-        padding: 0% 0% 5% 0%;
-        font-size: 100%;
-    }
+  .stat-block {
+    margin-bottom: 1.2rem;
+  }
 
-    .learn-more-button {
-        width: 80%;
-        height: 50px;
-    }
+  .stat-block h2 {
+    font-size: 28px;
+  }
+
+  .stat-block p {
+    font-size: 12px;
+    max-width: 180px;
+  }
+
+  .answer-column h4,
+  .problem-column h4 {
+    font-size: 12px;
+    margin-bottom: 1.2rem;
+  }
+
+  .answer-column p {
+    font-size: 14px;
+  }
+
+  .main-image {
+    height: 250px;
+  }
+
+  .image-wrapper {
+    max-width: 300px;
+  }
+
+  .image-label {
+    bottom: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    font-size: 11px;
+  }
 }

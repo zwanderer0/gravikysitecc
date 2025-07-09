@@ -1,0 +1,495 @@
+.case-studies-container {
+  width: 100%;
+  background: #ffffff;
+  padding: 8% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.case-studies-content {
+  width: 86%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.case-studies-title {
+  font-family: "JosefinBold";
+  font-size: 3.5rem;
+  color: #202020;
+  margin: 0 0 1rem 0;
+}
+
+.case-studies-subtitle {
+  font-family: "WorkSinLight";
+  font-size: 1.4rem;
+  color: #666;
+  margin: 0 0 3rem 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-studies-layout {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.case-studies-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 300px;
+  flex: 0 0 300px;
+}
+
+.tab-button {
+  background: transparent;
+  border: 2px solid #095ce5;
+  color: #095ce5;
+  font-family: "JosefinBold";
+  font-size: 1.1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  min-width: 280px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tab-subtitle {
+  font-family: "WorkSinLight";
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  opacity: 0.8;
+}
+
+.tab-button:hover {
+  background: #095ce5;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(9, 92, 229, 0.3);
+}
+
+.tab-button.active {
+  background: #095ce5;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(9, 92, 229, 0.3);
+}
+
+.tab-content {
+  background: #f8f9fa;
+  border-radius: 20px;
+  padding: 3rem;
+  flex: 1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.case-study-content h3 {
+  font-family: "JosefinBold";
+  font-size: 2.2rem;
+  color: #202020;
+  margin: 0 0 1.5rem 0;
+}
+
+.case-study-content p {
+  font-family: "WorkSinRegular";
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.case-study-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+  flex: 1;
+  min-width: 150px;
+}
+
+.stat h4 {
+  font-family: "JosefinBold";
+  font-size: 2.5rem;
+  color: #095ce5;
+  margin: 0 0 0.5rem 0;
+}
+
+.stat p {
+  font-family: "WorkSinLight";
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+.case-study-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #095ce5;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "JosefinBold";
+  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  transition: all 300ms ease;
+  margin-top: 1rem;
+}
+
+.case-study-link:hover {
+  background: #0847b8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(9, 92, 229, 0.4);
+  color: #ffffff;
+}
+
+/* Visual Assets Styling */
+.case-study-visual {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.case-study-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.case-study-video {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Printed Materials Gallery */
+.printed-materials {
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+.printed-materials h4 {
+  font-family: "JosefinBold";
+  font-size: 1.8rem;
+  color: #095ce5;
+  margin-bottom: 1.5rem;
+}
+
+.materials-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.material-item {
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+  text-align: center;
+  background: white;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 300ms ease;
+}
+
+.material-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.material-item.featured {
+  border: 3px solid #095ce5;
+}
+
+.material-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition:
+    transform 300ms ease,
+    box-shadow 300ms ease;
+  cursor: pointer;
+}
+
+.material-item img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  position: relative;
+}
+
+.material-item p {
+  font-family: "JosefinBold";
+  font-size: 1rem;
+  color: #202020;
+  margin: 0;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(135deg, #095ce5, #0847b8);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.video-thumbnail p {
+  font-family: "JosefinBold";
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+  color: white;
+}
+
+.video-thumbnail span {
+  font-family: "WorkSinLight";
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Lightbox Modal Styles */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: lightboxFadeIn 300ms ease;
+}
+
+@keyframes lightboxFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 95%;
+  max-height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: lightboxZoomIn 300ms ease;
+}
+
+@keyframes lightboxZoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 1001;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms ease;
+}
+
+.lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: scale(1.1);
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-caption {
+  color: white;
+  font-family: "JosefinBold";
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0 2rem;
+  max-width: 600px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .case-studies-title {
+    font-size: 3rem;
+  }
+
+  .case-studies-tabs {
+    gap: 1rem;
+  }
+
+  .tab-button {
+    min-width: 160px;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .tab-content {
+    padding: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .case-studies-container {
+    padding: 6% 0;
+  }
+
+  .case-studies-content {
+    width: 90%;
+  }
+
+  .case-studies-title {
+    font-size: 2.5rem;
+  }
+
+  .case-studies-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .case-studies-layout {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .case-studies-tabs {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: auto;
+    flex: none;
+  }
+
+  .tab-button {
+    width: auto;
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .tab-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .case-study-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .case-study-content p {
+    font-size: 1.1rem;
+  }
+
+  .case-study-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .stat h4 {
+    font-size: 2rem;
+  }
+
+  .materials-gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .material-item {
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .case-studies-title {
+    font-size: 2rem;
+  }
+
+  .case-studies-subtitle {
+    font-size: 1rem;
+  }
+
+  .tab-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .case-study-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .case-study-content p {
+    font-size: 1rem;
+  }
+
+  .case-study-link {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+
+  /* Lightbox Mobile Styles */
+  .lightbox-close {
+    top: -40px;
+    font-size: 2.5rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  .lightbox-caption {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .lightbox-image {
+    max-height: 80vh;
+  }
+}

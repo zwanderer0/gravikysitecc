@@ -3,7 +3,7 @@ import "./UnknownRedirection.css";
 import { Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { getNav } from "../../action/actions";
-import gravikyLogo from '../../assets/graviky-removebg.png'
+import gravikyLogo from "../../assets/graviky-removebg.png";
 
 class UnknownRedirection extends Component {
   componentDidMount = () => {
@@ -16,13 +16,13 @@ class UnknownRedirection extends Component {
       return <Redirect to="/" />;
     }
     if (this.props.location.pathname === "/products.html") {
-      return <Redirect to="/product/" />;
+      return <Redirect to="/product" />;
     }
     if (this.props.location.pathname === "/contact-us.html") {
-      return <Redirect to="/#contact-form" />;
+      return <Redirect to="/" />;
     }
     if (this.props.location.pathname === "/kaalink.html") {
-      return <Redirect to="/product/" />;
+      return <Redirect to="/product" />;
     }
     if (this.props.location.pathname === "/join-us.html") {
       return <Redirect to="/" />;
@@ -37,7 +37,7 @@ class UnknownRedirection extends Component {
       return <Redirect to="/" />;
     }
     if (this.props.location.pathname === "/partnerships.html") {
-      return <Redirect to="/partners/" />;
+      return <Redirect to="/partners" />;
     }
     return (
       <div className="unknown-container">
@@ -46,8 +46,7 @@ class UnknownRedirection extends Component {
           <i className="far fa-question-circle fa-spin"></i>
           <div className="err2">4</div> */}
           <h1>404</h1>
-          <div className
-          ="msg">
+          <div className="msg">
             Maybe this page moved? Got deleted? Is hiding out in quarantine?
             Never existed in the first place?
             <p>
@@ -55,7 +54,7 @@ class UnknownRedirection extends Component {
             </p>
           </div>
         </div>
-        <img className = "floating-img" src = {gravikyLogo} alt = "gravikyLogo"/>
+        <img className="floating-img" src={gravikyLogo} alt="gravikyLogo" />
       </div>
     );
   }
